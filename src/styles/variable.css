@@ -1,0 +1,21 @@
+:root {
+  /* fonts */
+  --primary-font: clashDisplay;
+  --secondary-font: cabinetGrotesk;
+
+  /* colors */
+  --primary-lighter: #cbfbfd;
+  --primary-light: #63dcf7;
+  --primary-main: #019fe7;
+  --primary-dark: #005ca6;
+  --primary-darker: #002f6e;
+
+  --secondary-lighter: #caf9fc;
+  --secondary-light: #61d5f1;
+  --secondary-main: #018ed1;
+  --secondary-dark: #005296;
+  --secondary-darker: #002964;
+
+  --text-primary: #021d29;
+  --text-secondary: #767676;
+}

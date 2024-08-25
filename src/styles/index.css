@@ -1,0 +1,95 @@
+@import "./common.css";
+
+/* Header css */
+.header_section {
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.header_menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 0;
+}
+.logo_wrapper {
+  max-width: 200px;
+}
+
+/* Header CSS END */
+/* BANNER CSS START */
+.banner_section {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  height: 100vh;
+}
+.banner_content_wrap .main_heading {
+  font-weight: 400;
+}
+.banner_content_wrap .main_heading span:nth-child(1) {
+  color: var(--primary-main);
+  letter-spacing: -10px;
+}
+.banner_content_wrap .main_heading span {
+  font-weight: 500;
+}
+.banner_content_wrap .sub_heading {
+  background: linear-gradient(
+    90deg,
+    #ff6502 0%,
+    #f94540 36.69%,
+    #f4208a 75.63%,
+    #f00eaa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+/* Tech Stack css */
+.tech_stack_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #fcb819;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.tech_desc span {
+  color: #969696;
+}
+.tech_stack_card .tech_stack_img img {
+  max-width: 60px;
+}
+
+/* About css */
+
+.about_section {
+  background: #61c5c32e;
+  padding: 50px 0;
+}
+.about_bg_img {
+  position: absolute;
+  right: 5%;
+}
+.about_bg_img img {
+  width: 200px;
+}
+
+.about_statics_wrap .about_statics {
+  border-right: 1px solid #c7c7c7;
+  width: 100%;
+}
+.about_statics h3 {
+  color: #11cd7e;
+}
+.about_statics_wrap .about_statics:nth-last-child(1) {
+  border-right: none;
+}
