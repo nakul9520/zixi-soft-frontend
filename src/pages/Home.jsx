@@ -1,7 +1,9 @@
-import About from "@/components/common/home/About";
-import Banner from "@/components/common/home/Banner";
-import Techstack from "@/components/common/home/Techstack";
+
 import React from "react";
+
+import About from "@/components/home/About";
+import Banner from "@/components/home/Banner";
+import Techstack from "@/components/home/Techstack";
 
 const Home = () => {
   return (
