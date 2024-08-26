@@ -53,6 +53,9 @@
 }
 
 /* Tech Stack css */
+.tech_stack_section {
+  background: linear-gradient(to bottom, #f9f2ec, #f3f4e0, #eaf2ec);
+}
 .tech_stack_card {
   display: flex;
   align-items: center;
@@ -77,10 +80,11 @@
 }
 .about_bg_img {
   position: absolute;
-  right: 5%;
+  right: 17%;
+  top: 10%;
 }
 .about_bg_img img {
-  width: 200px;
+  width: 150px;
 }
 
 .about_statics_wrap .about_statics {
@@ -92,4 +96,75 @@
 }
 .about_statics_wrap .about_statics:nth-last-child(1) {
   border-right: none;
+}
+
+/* Clients serve css */
+.client_serve_section {
+  background-color: #fef6ef;
+}
+.client_serve_points ul {
+  list-style: disc;
+}
+.client_serve_points ul li {
+  margin-bottom: 10px;
+}
+.client_serve_img img {
+  border-radius: 20px;
+}
+.client_serve_points h6 {
+  padding-left: 30px;
+}
+
+/* hire developer css */
+.hire_developer_section {
+  background: #61c5c32e;
+}
+.hire_dev_right{
+  position: relative;
+}
+.hire_dev_card_img {
+  width: 50px;
+  height: 50px;
+  margin: 7px 0;
+}
+.hire_dev_card_img img {
+  object-fit: cover;
+}
+.hire_dev_img_wrap img {
+  border-radius: 20px;
+}
+.hire_dev_img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.hire_dev_img2 {
+  position: absolute;
+  top: 160px;
+  /* right: 50px; */
+  left: 70px;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+.purple_border_gradient {
+  position: absolute;
+  right: 0px;
+  top: -60px;
+  max-width: 120px;
+}
+.yellow_border_gradient {
+  position: absolute;
+  left: -27px;
+  top: 150px;
+}
+.blue_border_gradient {
+  position: absolute;
+  top: 200px;
+  right: -70px;
 }

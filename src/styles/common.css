@@ -113,6 +113,7 @@ h6 {
   font-family: ClashDisplay;
   font-weight: 600;
   color: var(--text-primary);
+  letter-spacing: 1px;
 }
 
 h1 {
@@ -221,6 +222,11 @@ p {
 
 ul {
   list-style: none;
+  /* padding-left: 0; */
+}
+li {
+  color: var(--text-primary);
+  font-weight: 500;
 }
 section {
   position: relative;
@@ -284,3 +290,28 @@ input[type="number"] {
   align-items: center;
   gap: 10px;
 }
+
+/* gradient layres */
+/* .purple_border_gradient {
+  background-image: linear-gradient(white, white),
+    linear-gradient(to left, #af17f2, #f3059b);
+  background-color: transparent;
+  background-clip: padding-box, border-box; 
+  border-radius: 20px;
+  border: 7px solid transparent;
+}
+
+.yellow_border_gradient {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to left, #fcb819, #ff6502) border-box;
+  border-radius: 20px;
+  border: 7px solid transparent;
+}
+.blue_border_gradient {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to left, #009fe7, #008dcf) border-box;
+  border-radius: 20px;
+  border: 7px solid transparent;
+} */

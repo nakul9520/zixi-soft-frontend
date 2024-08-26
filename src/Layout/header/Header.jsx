@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed-top header_section">
-        <Container fluid>
+        <Container>
           <Stack
             gap={3}
             direction="horizontal"

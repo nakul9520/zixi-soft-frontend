@@ -14,7 +14,7 @@ const About = () => {
             alt="logo_first_letter"
           />
         </div>
-        <Container fluid>
+        <Container>
           <Row>
             <Col xs={4}>
               <div className="">
@@ -35,37 +35,34 @@ const About = () => {
                 />
               </div>
             </Col>
-          </Row>
-          {/* <Row>
-            <Col xs={4}>
-              <div className="about_statics text-center">
-                <h3 className="fw-bold">250+</h3>
-                <p>Customer Service</p>
-              </div>
+
+            <Col xs={12}>
+              <Stack
+                direction="horizontal"
+                gap={3}
+                className="about_statics_wrap justify-content-between pt-5"
+              >
+                <div className="about_statics text-center">
+                  <div>
+                    <h3 className="fw-bold">250+</h3>
+                    <p>Customer Service</p>
+                  </div>
+                </div>{" "}
+                <div className="about_statics text-center">
+                  <h3 className="fw-bold">2000+</h3>
+                  <p>Network</p>
+                </div>{" "}
+                <div className="about_statics text-center">
+                  <h3 className="fw-bold">10+ Years</h3>
+                  <p>Experience</p>
+                </div>
+                <div className="about_statics text-center">
+                  <h3 className="fw-bold">150+</h3>
+                  <p>Team Worldwide</p>
+                </div>
+              </Stack>
             </Col>
-          </Row> */}
-          <Stack
-            direction="horizontal"
-            gap={3}
-            className="about_statics_wrap justify-content-between pt-5"
-          >
-            <div className="about_statics text-center">
-              <h3 className="fw-bold">250+</h3>
-              <p>Customer Service</p>
-            </div>{" "}
-            <div className="about_statics text-center">
-              <h3 className="fw-bold">250+</h3>
-              <p>Customer Service</p>
-            </div>{" "}
-            <div className="about_statics text-center">
-              <h3 className="fw-bold">250+</h3>
-              <p>Customer Service</p>
-            </div>
-            <div className="about_statics text-center">
-              <h3 className="fw-bold">250+</h3>
-              <p>Customer Service</p>
-            </div>
-          </Stack>
+          </Row>
         </Container>
       </section>
     </>
