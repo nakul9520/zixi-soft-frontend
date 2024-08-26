@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row, Stack } from "react-bootstrap";
-import PrimaryButton from "../PrimaryButton";
 import { assetsObj } from "@/utils/Images";
+import PrimaryButton from "../common/PrimaryButton";
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
         <Container>
           <Row>
             <Col xs={4}>
-              <div className="">
+              <div>
                 <h3>Why companies choose Sourcebae</h3>
               </div>
             </Col>

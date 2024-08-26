@@ -16,6 +16,12 @@
   --secondary-dark: #005296;
   --secondary-darker: #002964;
 
+  --primary-gradient: linear-gradient(180deg, #019fe7 42.53%, #018ed1 106%);
+  --success-main: #11cd7e;
+
+  --text-light: #ffffff;
   --text-primary: #021d29;
   --text-secondary: #767676;
+
+  --divider-color: #bcbcbc;
 }

@@ -1,5 +1,20 @@
 @import "./common.css";
 
+/* Utiles */
+.gradient_heading {
+  background: linear-gradient(
+    90deg,
+    #ff6502 0%,
+    #f94540 36.69%,
+    #f4208a 75.63%,
+    #f00eaa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+/* Utiles */
 /* Header css */
 .header_section {
   padding: 1rem 0;
@@ -92,7 +107,7 @@
   width: 100%;
 }
 .about_statics h3 {
-  color: #11cd7e;
+  color: var(--success-main);
 }
 .about_statics_wrap .about_statics:nth-last-child(1) {
   border-right: none;
@@ -166,5 +181,5 @@
 .blue_border_gradient {
   position: absolute;
   top: 200px;
-  right: -70px;
+  right: 0px;
 }

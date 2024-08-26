@@ -60,7 +60,7 @@ const Techstack = () => {
             {...options}
           >
             {map(data, (item, i) => (
-              <div className="tech_stack_card">
+              <div className="tech_stack_card" key={i}>
                 <div className="tech_desc">
                   <h6 className="secondary_font">{item.title} </h6>
                   <span>10 month engagement</span>
