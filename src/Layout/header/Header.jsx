@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed-top header_section">
-        <Container>
+        <Container fluid>
           <Stack
             gap={3}
             direction="horizontal"
@@ -38,7 +38,7 @@ const Header = () => {
                   ))}
                 </ul>
                 <div>
-                  <CMButton onClick={() => navigate("/hire-team")}>
+                  <CMButton variant="gradient" color="primary" onClick={() => navigate("/hire-team")}>
                     Hire Your Team
                   </CMButton>
                 </div>
