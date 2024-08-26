@@ -212,8 +212,10 @@ const VerifiedDevelopers = () => {
                         className="align-items-center flex-wrap mb-4"
                         gap={2}
                       >
-                        {map(item.skills, (sub_item, i) => (
-                          <div className="skill_wrapper">{sub_item}</div>
+                        {map(item.skills, (sub_item, index) => (
+                          <div key={index} className="skill_wrapper">
+                            {sub_item}
+                          </div>
                         ))}
                       </Stack>
                       <div className="text-end">

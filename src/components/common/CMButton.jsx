@@ -133,8 +133,14 @@ CMButton.propTypes = {
   endicon: PropTypes.object,
   staricon: PropTypes.object,
   style: PropTypes.object,
-  variant: PropTypes.oneOf(["contained", "outlined", "soft", "ghost"]),
-  color: PropTypes.oneOf(["primary", "success", "warning"]),
+  variant: PropTypes.oneOf([
+    "contained",
+    "outlined",
+    "soft",
+    "ghost",
+    "gradient",
+  ]),
+  color: PropTypes.oneOf(["primary", "success", "warning", "orange"]),
 };
 
 export default CMButton;

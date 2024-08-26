@@ -35,4 +35,10 @@ export const assetsObj = {
   hiringModelIcon3: `${imagePath}icon/hiring-model-3.png`,
   hiringModelIcon4: `${imagePath}icon/hiring-model-4.png`,
   developerBG: `${imagePath}images/developer_bg.png`,
+  scheduleCallBG: `${imagePath}images/schedule-call-bg.png`,
+  scheduleCallImage: `${imagePath}images/schedule-call-image.png`,
+  trailIcon: `${imagePath}icon/one-month-trail.svg`,
+  moneyBack: `${imagePath}icon/money-back-icon.svg`,
+  freeReplacement: `${imagePath}icon/free-replacement.svg`,
+  StartTodayBG: `${imagePath}images/start-today-BG.png`,
 };
