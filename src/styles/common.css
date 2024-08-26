@@ -134,14 +134,14 @@ p {
 
 .body1 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: cabinetGrotesk;
   color: var(--text-primary);
 }
 
 .body2 {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: cabinetGrotesk;
   color: var(--text-primary);
 }
@@ -233,8 +233,38 @@ section {
 .text_success {
   color: var(--success-main);
 }
-.custom_divider{
+.custom_divider {
   border-bottom: 1px solid var(--divider-color);
+}
+
+.primary_gradient {
+  background: var(--primary-gradient);
+}
+
+.primary_contained_btn {
+  background: var(--primary-main);
+  color: var(--text-light);
+  border: none;
+  transition: all 0.3s ease;
+}
+.primary_contained_btn:hover,
+.primary_contained_btn:focus,
+.primary_contained_btn:active {
+  background: var(--primary-dark);
+}
+.primary_outlined_btn {
+  color: var(--primary-main);
+  background: transparent;
+  border: 1px solid var(--primary-main);
+  transition: all 0.3s ease;
+}
+
+.primary_outlined_btn:hover,
+.primary_outlined_btn:focus,
+.primary_outlined_btn:active {
+  border-color: var(--primary-dark);
+  color: var(--primary-dark);
+  background: transparent;
 }
 /* start scrollbar */
 

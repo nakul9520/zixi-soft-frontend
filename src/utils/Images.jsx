@@ -20,4 +20,5 @@ export const assetsObj = {
  hiringModelIcon2: `${imagePath}icon/hiring-model-2.png`,
  hiringModelIcon3: `${imagePath}icon/hiring-model-3.png`,
  hiringModelIcon4: `${imagePath}icon/hiring-model-4.png`,
+ developerBG: `${imagePath}images/developer_bg.png`,
 };

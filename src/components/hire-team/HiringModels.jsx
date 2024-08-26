@@ -74,7 +74,7 @@ const HiringModels = () => {
                   className="model_card mb-5"
                   style={{ background: item.background_color }}
                 >
-                  <Card.Body>
+                  <Card.Body className="px-4">
                     <Stack direction="horizontal" gap={4}>
                       <div
                         className="img_wrapper"
@@ -90,7 +90,7 @@ const HiringModels = () => {
                     </Stack>
                   </Card.Body>
                   <div className="w-100 custom_divider"></div>
-                  <Card.Body>
+                  <Card.Body className="px-4">
                     <div className="model_desc">
                       <p className="subtitle1 mb-1 secondary_font">
                         Duration : {item.duration}

@@ -73,14 +73,14 @@ const HireTeamBanner = () => {
                 alt="hire team banner"
               />
               <div>
-                <div class="avatar-group mb-3">
+                <div className="avatar-group mb-3">
                   {map(talentList, (item, i) => (
-                    <div class="avatar">
-                      <span class="avatar-name">{item.name}</span>
+                    <div className="avatar" key={i}>
+                      <span className="avatar-name">{item.name}</span>
                       <img src={item.avatar} alt="Image" />
                     </div>
                   ))}
-                  <div class="avatar">
+                  <div className="avatar">
                     <img src={assetsObj.talentIcon} alt="Image" />
                   </div>
                 </div>
