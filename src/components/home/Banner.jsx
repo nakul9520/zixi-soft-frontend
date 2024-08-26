@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import PrimaryButton from "../PrimaryButton";
 import { assetsObj } from "@/utils/Images";
+import PrimaryButton from "../common/PrimaryButton";
 
 const Banner = () => {
   return (

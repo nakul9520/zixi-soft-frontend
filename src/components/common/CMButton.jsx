@@ -1,0 +1,77 @@
+import PropTypes from "prop-types";
+import { forwardRef } from "react";
+
+import { Button } from "react-bootstrap";
+
+// ----------------------------------------------------------------------
+const CMButton = forwardRef(function CMButton(
+  {
+    children,
+    color = "primary",
+    variant = "contained",
+    staricon,
+    endicon,
+    style,
+    className,
+    ...other
+  },
+  ref
+) {
+  const primaryFilledVariant = variant === "contained" && color === "primary";
+  const primaryOutlinedVariant = variant === "outlined" && color === "primary";
+
+  const iconStyles = {
+    width: "16px",
+    height: "16px",
+    "& svg, img": { width: "16px", height: "16px", objectFit: "cover" },
+  };
+
+  return (
+    <Button
+      ref={ref}
+      style={{
+        ...(staricon && { paddingLeft: "8px" }),
+        ...(endicon && { paddingRight: "8px" }),
+        height: 40,
+        minWidth: 24,
+        lineHeight: 0,
+        borderRadius: 6,
+        cursor: "pointer",
+        alignItems: "center",
+        whiteSpace: "nowrap",
+        display: "inline-flex",
+        justifyContent: "center",
+        textTransform: "capitalize",
+        padding: "1rem 1.5rem",
+        fontSize: 16,
+        fontWeight: 700,
+        ...style,
+      }}
+      className={`${primaryFilledVariant ? "primary_contained_btn" : primaryOutlinedVariant ? "primary_outlined_btn" : ""} ${className}`}
+      {...other}
+    >
+      {staricon && (
+        <span style={{ marginRight: "8px", ...iconStyles }}> {staricon} </span>
+      )}
+
+      {children}
+
+      {endicon && (
+        <span style={{ marginLeft: "8px", ...iconStyles }}> {endicon} </span>
+      )}
+    </Button>
+  );
+});
+
+CMButton.displayName = "CMButton"; // Set the display name here
+
+CMButton.propTypes = {
+  children: PropTypes.node,
+  endicon: PropTypes.object,
+  staricon: PropTypes.object,
+  style: PropTypes.object,
+  variant: PropTypes.oneOf(["contained", "outlined"]),
+  color: PropTypes.oneOf(["primary"]),
+};
+
+export default CMButton;
