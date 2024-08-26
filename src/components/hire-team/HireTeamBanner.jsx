@@ -1,7 +1,7 @@
 import { assetsObj } from "@/utils/Images";
 import { map } from "lodash";
-import React from "react";
-import { Button, Col, Container, Row, Stack } from "react-bootstrap";
+import { Col, Container, Row, Stack } from "react-bootstrap";
+import CMButton from "../common/CMButton";
 
 const HireTeamBanner = () => {
   const talentList = [
@@ -61,7 +61,9 @@ const HireTeamBanner = () => {
                 <p className="subtitle1 mb-0">1.75 interview-to-hire ratio</p>
               </Stack>
 
-              <Button>matched with top engineers</Button>
+              <CMButton className="rounded-5">
+                Get matched with top engineers
+              </CMButton>
             </Col>
             <Col
               md={6}

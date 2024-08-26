@@ -10,6 +10,7 @@ import {
   Row,
   Stack,
 } from "react-bootstrap";
+import CMButton from "../common/CMButton";
 
 const HiringModels = () => {
   const hiringModelContent = [
@@ -65,7 +66,9 @@ const HiringModels = () => {
             className="align-items-center justify-content-between mb-5"
           >
             <h3>Our Hiring Model</h3>
-            <Button>Hire Developer</Button>
+            <CMButton endicon={<i className="bi bi-arrow-right"></i>}>
+              Hire Developer
+            </CMButton>
           </Stack>
           <Row>
             {map(hiringModelContent, (item, i) => (

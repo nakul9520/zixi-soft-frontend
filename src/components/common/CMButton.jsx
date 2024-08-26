@@ -21,17 +21,17 @@ const CMButton = forwardRef(function CMButton(
   const primaryOutlinedVariant = variant === "outlined" && color === "primary";
 
   const iconStyles = {
-    width: 16,
-    height: 16,
-    "& svg, img": { width: 1, height: 1, objectFit: "cover" },
+    width: "16px",
+    height: "16px",
+    "& svg, img": { width: "16px", height: "16px", objectFit: "cover" },
   };
 
   return (
     <Button
       ref={ref}
       style={{
-        ...(staricon && { paddingLeft: 0.75 }),
-        ...(endicon && { paddingRight: 0.75 }),
+        ...(staricon && { paddingLeft: "8px" }),
+        ...(endicon && { paddingRight: "8px" }),
         height: 40,
         minWidth: 24,
         lineHeight: 0,
@@ -51,13 +51,13 @@ const CMButton = forwardRef(function CMButton(
       {...other}
     >
       {staricon && (
-        <span style={{ marginRight: 0.75, ...iconStyles }}> {staricon} </span>
+        <span style={{ marginRight: "8px", ...iconStyles }}> {staricon} </span>
       )}
 
       {children}
 
       {endicon && (
-        <span style={{ marginLeft: 0.75, ...iconStyles }}> {endicon} </span>
+        <span style={{ marginLeft: "8px", ...iconStyles }}> {endicon} </span>
       )}
     </Button>
   );
