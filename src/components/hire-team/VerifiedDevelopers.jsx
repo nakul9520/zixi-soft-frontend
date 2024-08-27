@@ -30,8 +30,8 @@ const VerifiedDevelopers = () => {
     nav: true,
     dots: false,
     navText: [
-      "<i class='bi bi-arrow-left'></i>",
-      "<i class='bi bi-arrow-right'></i>",
+      "<i className='bi bi-arrow-left'></i>",
+      "<i className='bi bi-arrow-right'></i>",
     ],
   };
 

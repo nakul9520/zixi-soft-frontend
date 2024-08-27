@@ -44,7 +44,7 @@ const DiscoverOpportunities = () => {
                   ))}
                   <div className="avatar">
                     {/* <img src={assetsObj.talentIcon} alt="Image" /> */}
-                    <i class="bi bi-plus-lg"></i>
+                    <i className="bi bi-plus-lg"></i>
                   </div>
                 </div>
               </div>
