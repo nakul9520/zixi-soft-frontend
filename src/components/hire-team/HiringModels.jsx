@@ -65,8 +65,8 @@ const HiringModels = () => {
             gap={3}
             className="align-items-center justify-content-between mb-5"
           >
-            <h3>Our Hiring Model</h3>
-            <CMButton endicon={<i className="bi bi-arrow-right"></i>}>
+            <h3>Get the Best Talent with Our Hiring Models</h3>
+            <CMButton className="rounded-5" endicon={<i className="bi bi-arrow-right"></i>}>
               Hire Developer
             </CMButton>
           </Stack>

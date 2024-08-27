@@ -1,3 +1,4 @@
+import { palette } from "@/utils/colors";
 import PropTypes from "prop-types";
 import { forwardRef } from "react";
 
@@ -8,7 +9,7 @@ const CMButton = forwardRef(function CMButton(
   {
     children,
     color = "primary",
-    variant = "contained",
+    variant = "gradient",
     staricon,
     endicon,
     style,
@@ -17,8 +18,68 @@ const CMButton = forwardRef(function CMButton(
   },
   ref
 ) {
-  const primaryFilledVariant = variant === "contained" && color === "primary";
-  const primaryOutlinedVariant = variant === "outlined" && color === "primary";
+  const filledVariant = variant === "contained";
+  const outlinedVariant = variant === "outlined";
+  const ghostVariant = variant === "ghost";
+  const softVariant = variant === "soft";
+  const gradientVariant = variant === "gradient";
+
+  const defaultStyle = {
+    ...(color === "default" && {
+      // FILLED
+      ...(filledVariant && {
+        color: palette.text.primary,
+        backgroundColor: theme.palette.grey[1400],
+      }),
+      // OUTLINED
+      ...(outlinedVariant && {
+        backgroundColor: "transparent",
+        color: palette.text.primary,
+        border: `1px solid ${palette.grey[1300]}`,
+      }),
+      // GHOST
+      ...(ghostVariant && {
+        color: palette.text.primary,
+        backgroundColor: palette.grey[1400],
+        border: `1px solid ${palette.grey[1300]}`,
+      }),
+    }),
+  };
+
+  const colorStyle = {
+    ...(color !== "default" && {
+      // FILLED
+      ...(filledVariant && {
+        backgroundColor: palette[color].main,
+        color: palette[color].contrastText,
+        border: "none",
+      }),
+      // OUTLINED
+      ...(outlinedVariant && {
+        backgroundColor: "transparent",
+        color: palette[color].main,
+        border: `1px solid ${palette[color].main}`,
+      }),
+      // SOFT
+      ...(softVariant && {
+        color: palette[color].main,
+        backgroundColor: palette[color].lighter,
+        border: "none",
+      }),
+      // GHOST
+      ...(ghostVariant && {
+        color: palette[color].main,
+        backgroundColor: palette[color].lighter,
+        border: `1px solid ${palette[color].main}`,
+      }),
+      // GRADIENT
+      ...(gradientVariant && {
+        color: palette[color].contrastText,
+        background: `linear-gradient(180deg, ${palette[color].main} 42.53%, ${palette[color].dark} 106%)`,
+        border: `none`,
+      }),
+    }),
+  };
 
   const iconStyles = {
     width: "16px",
@@ -45,9 +106,11 @@ const CMButton = forwardRef(function CMButton(
         padding: "1rem 1.5rem",
         fontSize: 16,
         fontWeight: 700,
+        ...defaultStyle,
+        ...colorStyle,
         ...style,
       }}
-      className={`${primaryFilledVariant ? "primary_contained_btn" : primaryOutlinedVariant ? "primary_outlined_btn" : ""} ${className}`}
+      className={className}
       {...other}
     >
       {staricon && (
@@ -70,8 +133,14 @@ CMButton.propTypes = {
   endicon: PropTypes.object,
   staricon: PropTypes.object,
   style: PropTypes.object,
-  variant: PropTypes.oneOf(["contained", "outlined"]),
-  color: PropTypes.oneOf(["primary"]),
+  variant: PropTypes.oneOf([
+    "contained",
+    "outlined",
+    "soft",
+    "ghost",
+    "gradient",
+  ]),
+  color: PropTypes.oneOf(["primary", "success", "warning", "orange"]),
 };
 
 export default CMButton;
