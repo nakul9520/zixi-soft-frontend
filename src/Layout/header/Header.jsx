@@ -1,16 +1,16 @@
+import CMButton from "@/components/common/CMButton";
 import { assetsObj } from "@/utils/images";
 import { map } from "lodash";
-import { Button, Container, Stack } from "react-bootstrap";
-import { navLinks } from "./LinkConfig";
+import { Container, Stack } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import CMButton from "@/components/common/CMButton";
+import { navLinks } from "./LinkConfig";
 
 const Header = () => {
   const navigate = useNavigate();
   return (
     <>
       <header className="fixed-top header_section">
-        <Container>
+        <Container fluid>
           <Stack
             gap={3}
             direction="horizontal"
@@ -38,7 +38,7 @@ const Header = () => {
                   ))}
                 </ul>
                 <div>
-                  <CMButton onClick={() => navigate("/hire-team")}>
+                  <CMButton variant="gradient" color="primary" onClick={() => navigate("/hire-team")}>
                     Hire Your Team
                   </CMButton>
                 </div>

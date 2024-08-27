@@ -132,7 +132,7 @@ p {
   font-family: cabinetGrotesk;
   font-size: 16px;
 }
-a{
+a {
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -237,9 +237,10 @@ section {
 .text_dark {
   color: var(--text-primary);
 }
-.text_light {
+.text_dark_light {
   color: var(--text-secondary);
 }
+
 .text_success {
   color: var(--success-main);
 }
@@ -251,31 +252,6 @@ section {
   background: var(--primary-gradient);
 }
 
-.primary_contained_btn {
-  background: var(--primary-main);
-  color: var(--text-light);
-  border: none;
-  transition: all 0.3s ease;
-}
-.primary_contained_btn:hover,
-.primary_contained_btn:focus,
-.primary_contained_btn:active {
-  background: var(--primary-dark);
-}
-.primary_outlined_btn {
-  color: var(--primary-main);
-  background: transparent;
-  border: 1px solid var(--primary-main);
-  transition: all 0.3s ease;
-}
-
-.primary_outlined_btn:hover,
-.primary_outlined_btn:focus,
-.primary_outlined_btn:active {
-  border-color: var(--primary-dark);
-  color: var(--primary-dark);
-  background: transparent;
-}
 /* start scrollbar */
 
 ::-webkit-scrollbar {
@@ -327,6 +303,27 @@ input[type="number"] {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.gradient_heading {
+  background: linear-gradient(
+    90deg,
+    #ff6502 0%,
+    #f94540 36.69%,
+    #f4208a 75.63%,
+    #f00eaa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.gradient_heading1 {
+  background: linear-gradient(180deg, #fcb819 13.25%, #ff802e 89.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 /* gradient layres */

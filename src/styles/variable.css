@@ -7,7 +7,7 @@
   --primary-lighter: #cbfbfd;
   --primary-light: #63dcf7;
   --primary-main: #019fe7;
-  --primary-dark: #005ca6;
+  --primary-dark: #018ed1;
   --primary-darker: #002f6e;
 
   --secondary-lighter: #caf9fc;
@@ -16,9 +16,19 @@
   --secondary-dark: #005296;
   --secondary-darker: #002964;
 
-  --primary-gradient: linear-gradient(180deg, #019fe7 42.53%, #018ed1 106%);
+  --success-lighter: #d1ffd9;
+  --success-light: #6bf09e;
   --success-main: #11cd7e;
+  --success-dark: #089374;
+  --success-darker: #036260;
 
+  --warning-lighter: #fef6d0;
+  --warning-light: #fedd74;
+  --warning-main: #fcb819;
+  --warning-dark: #b5780c;
+  --warning-darker: #784704;
+
+  --primary-gradient: linear-gradient(180deg, #019fe7 42.53%, #018ed1 106%);
   --text-light: #ffffff;
   --text-primary: #021d29;
   --text-secondary: #767676;

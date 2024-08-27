@@ -1,0 +1,78 @@
+@import "./common.css";
+
+/* banner section css */
+.hire_team_banner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  height: 100vh;
+}
+
+.for_dev_banner_content h2,
+.for_dev_banner_content p {
+  color: #fff;
+}
+.for_dev_banner_content span {
+  color: #36aee8;
+}
+
+/* developer_dream_company css */
+.barnd_logo_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fcb819;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.brand_logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid #fcb819; */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* global opportunity css */
+.global_opportunity_section {
+  background-color: #ff650212;
+}
+/* apply for job css */
+.apply_for_job_section {
+  background-color: #11cd7e0f;
+}
+
+/* matching process css */
+.matching_process_section {
+  background-color: #fef6ef;
+}
+
+.day_box_design {
+    display: flex;
+    gap: 40px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    position: relative;  
+    border: 1px solid #FCB819;
+}
+
+.day_box_design::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #FCB819;
+    top: 50%;
+    right: -20px; 
+    transform: translateY(-50%);
+    width: 40px;
+    height: 100%;
+    background-color: #fff; 
+    clip-path: polygon(0 0, 100% 50%, 0 100%); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
