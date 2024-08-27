@@ -132,6 +132,10 @@ p {
   font-family: cabinetGrotesk;
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
 .body1 {
   font-size: 16px;
@@ -299,6 +303,27 @@ input[type="number"] {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.gradient_heading {
+  background: linear-gradient(
+    90deg,
+    #ff6502 0%,
+    #f94540 36.69%,
+    #f4208a 75.63%,
+    #f00eaa 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.gradient_heading1 {
+  background: linear-gradient(180deg, #fcb819 13.25%, #ff802e 89.46%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 /* gradient layres */

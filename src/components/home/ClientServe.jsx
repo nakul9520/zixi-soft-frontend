@@ -33,22 +33,48 @@ const ClientServe = () => {
             </Col>
             <Col xs={1}></Col>
             <Col xs={5}>
-              <div className="client_serve_img">
+              <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}
-                  className="img-fluid"
+                  className="img-fluid client_serve_img position-relative z-2 rounded-4"
                   alt="client serve image"
+                />
+
+                <img
+                  src={assetsObj.ellipseBluePinkSmall}
+                  alt="ellipseBluePinkSmall"
+                  className="img-fluid ellipse_blue_pink_small"
+                />
+                <img
+                  src={assetsObj.ellipseGreen}
+                  alt="ellipseGreen"
+                  className="img-fluid first_ellipse_green"
+                />
+                <img
+                  src={assetsObj.ellipseYellow}
+                  alt="ellipseYellow"
+                  className="img-fluid ellipse_yellow"
                 />
               </div>
             </Col>
           </Row>
           <Row className="my-5">
             <Col xs={5}>
-              <div className="client_serve_img">
+              <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}
-                  className="img-fluid"
+                  className="img-fluid client_serve_img position-relative z-2 rounded-4"
                   alt="client serve image"
+                />
+                <img
+                  src={assetsObj.ellipseBluepink}
+                  alt="ellipseBluepink"
+                  className="img-fluid ellipse_blue_pink"
+                />{" "}
+                <img
+                  src={assetsObj.ellipseYellowSmall}
+                  alt="ellipseYellowSmall"
+                  className="img-fluid ellipse_yellow_small"
                 />
               </div>
             </Col>
@@ -87,11 +113,22 @@ const ClientServe = () => {
             </Col>
             <Col xs={1}></Col>
             <Col xs={5}>
-              <div className="client_serve_img">
+              <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}
-                  className="img-fluid"
+                  className="img-fluid client_serve_img position-relative z-2 rounded-4"
                   alt="client serve image"
+                />
+
+                <img
+                  src={assetsObj.ellipseGreen}
+                  alt="ellipseGreen"
+                  className="img-fluid second_ellipse_green"
+                />
+                <img
+                  src={assetsObj.ellipseSkyblue}
+                  alt="ellipseSkyblue"
+                  className="img-fluid ellipse_skyblue"
                 />
               </div>
             </Col>

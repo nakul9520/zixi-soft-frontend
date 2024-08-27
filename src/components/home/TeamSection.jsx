@@ -80,7 +80,7 @@ const TeamSection = () => {
                   <div className="team_member_info">
                     <h6>Marine Duo</h6>
                     <p>
-                      <i className="bi bi-patch-check-fill"></i> Verified
+                      <i class="bi bi-patch-check-fill"></i> Verified
                       Expert ​in Engineering
                     </p>
                     <p> JavaScript Developer</p>
@@ -103,7 +103,7 @@ const TeamSection = () => {
                   <div className="team_member_info">
                     <h6>Marine Duo</h6>
                     <p>
-                      <i className="bi bi-patch-check-fill"></i> Verified
+                      <i class="bi bi-patch-check-fill"></i> Verified
                       Expert ​in Engineering
                     </p>
                     <p> JavaScript Developer</p>

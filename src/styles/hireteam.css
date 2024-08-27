@@ -16,7 +16,7 @@
 .avatar-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 .avatar {
   width: 4rem;
@@ -63,6 +63,9 @@
 .avatar:hover .avatar-name {
   opacity: 1;
   visibility: visible;
+}
+.avatar i{
+  color: #fff;
 }
 .avatar img {
   width: 100%;

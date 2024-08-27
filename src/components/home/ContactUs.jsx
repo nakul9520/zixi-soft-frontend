@@ -1,9 +1,11 @@
 import { assetsObj } from "@/utils/Images";
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import PrimaryButton from "../common/PrimaryButton";
+import { Icon } from "@iconify/react";
+import Iconify from "../common/iconify";
 import Form from "react-bootstrap/Form";
 import CMButton from "../common/CMButton";
-import Iconify from "../common/iconify";
-import PrimaryButton from "../common/PrimaryButton";
 
 const ContactUs = () => {
   return (
@@ -54,8 +56,8 @@ const ContactUs = () => {
             </Col>
             <Col xs={7}>
               <div className="consultant_contact_form">
-                <div className="card">
-                  <div className="card-body">
+                <div class="card">
+                  <div class="card-body">
                     <Form>
                       <Row>
                         <Col xs={6} className="mb-3">

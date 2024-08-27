@@ -18,7 +18,7 @@ const HireDevelopers = () => {
               </div>
             </Col>
           </Row>
-          <Row>
+          <Row className="">
             <Col xs={7}>
               <Row>
                 <Col xs={6}>
@@ -91,27 +91,7 @@ const HireDevelopers = () => {
             </Col>
             <Col xs={5}>
               <div className="hire_dev_right">
-                <div className="hire_dev_layer">
-                  {/* <div className="purple_border_gradient"></div>
-                  <div className="yellow_border_gradient"></div>
-                  <div className="blue_border_gradient"></div> */}
-                  <img
-                    src={assetsObj.yellowBorderGradient}
-                    alt="yellowBorderGradient"
-                    className="img-fluid yellow_border_gradient"
-                  />
-                  <img
-                    src={assetsObj.blueBorderGradient}
-                    alt="blueBorderGradient"
-                    className="img-fluid blue_border_gradient"
-                  />
-                  <img
-                    src={assetsObj.purpleBorderGradient}
-                    alt="purpleBorderGradient"
-                    className="img-fluid purple_border_gradient"
-                  />
-                </div>
-                {/* <div className="hire_dev_img_wrap"> */}
+                <div className="hire_dev_img_wrap position-relative z-3">
                   <img
                     src={assetsObj.hireDevImg1}
                     alt="hire-dev-img-1"
@@ -122,7 +102,22 @@ const HireDevelopers = () => {
                     alt="hire-dev-img-2"
                     className="hire_dev_img2 img-fluid"
                   />
-                {/* </div> */}
+                </div>
+                <img
+                  src={assetsObj.yellowBorderGradient}
+                  alt="yellowBorderGradient"
+                  className="img-fluid yellow_border_gradient"
+                />
+                <img
+                  src={assetsObj.blueBorderGradient}
+                  alt="blueBorderGradient"
+                  className="img-fluid blue_border_gradient"
+                />
+                <img
+                  src={assetsObj.purpleBorderGradient}
+                  alt="purpleBorderGradient"
+                  className="img-fluid purple_border_gradient"
+                />
               </div>
             </Col>
           </Row>

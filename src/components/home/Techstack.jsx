@@ -43,7 +43,7 @@ const Techstack = () => {
           <Row className="align-items-center justify-content-center">
             <Col xs={12}>
               <div className="text-center">
-                <h3>Search based on tech stacks</h3>
+                <h3>Expert Hiring for All Your Tech Needs</h3>
                 <p className="subtitle1">
                   Earn up to 80 dollars an hour with Gaper remote jobs
                 </p>
