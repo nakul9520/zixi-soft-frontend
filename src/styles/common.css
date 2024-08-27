@@ -132,6 +132,10 @@ p {
   font-family: cabinetGrotesk;
   font-size: 16px;
 }
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
 
 .body1 {
   font-size: 16px;
