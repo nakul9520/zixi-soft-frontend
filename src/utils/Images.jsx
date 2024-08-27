@@ -49,6 +49,14 @@ export const assetsObj = {
   linkedinIcon: `${imagePath}icon/linkedin_icon.png`,
   youtubeIcon: `${imagePath}icon/youtube_icon.png`,
   instagramIcon: `${imagePath}icon/instagram_icon.png`,
+  forDevBg: `${imagePath}images/for-dev-bg.png`,
+  girlWithLaptop: `${imagePath}images/girl-with-laptop.png`,
+  airbnbLogo: `${imagePath}images/airbnb.png`,
+  amazonLogo: `${imagePath}images/amazon.png`,
+  dunzoLogo: `${imagePath}images/dunzo.png`,
+  googleLogo: `${imagePath}images/google.png`,
+  paytmLogo: `${imagePath}images/paytm.png`,
+  spotifyLogo: `${imagePath}images/spotify.png`,
 
 
 

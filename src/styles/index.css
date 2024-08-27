@@ -1,20 +1,5 @@
 @import "./common.css";
 
-/* Utiles */
-.gradient_heading {
-  background: linear-gradient(
-    90deg,
-    #ff6502 0%,
-    #f94540 36.69%,
-    #f4208a 75.63%,
-    #f00eaa 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
-/* Utiles */
 /* Header css */
 .header_section {
   padding: 1rem 0;
