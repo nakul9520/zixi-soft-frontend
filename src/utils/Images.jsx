@@ -57,6 +57,7 @@ export const assetsObj = {
   googleLogo: `${imagePath}images/google.png`,
   paytmLogo: `${imagePath}images/paytm.png`,
   spotifyLogo: `${imagePath}images/spotify.png`,
+  techImage: `${imagePath}images/tech-img-1.png`,
 
 
 
