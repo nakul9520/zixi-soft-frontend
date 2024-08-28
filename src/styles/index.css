@@ -328,30 +328,25 @@
   padding-bottom: 7rem;
   padding-top: 5rem;
 }
-.opportunities_point span {
+.opportunities_point .opportunities_point_number {
   background: linear-gradient(180deg, #ab15f4 0%, #7b04fd 100%);
-  display: inline-block;
   position: relative;
   width: 60px;
   height: 60px;
-  font-size: 20px;
-  font-weight: 500;
+  border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  border-radius: 100px;
 }
-.opportunities_point {
+.opportunities_point .opportunities_point_number span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 3rem;
+  justify-content: center;
 }
-.opportunities_point p {
-  margin: 0;
-}
-.opportunities_point span::after {
+.opportunities_point .opportunities_point_number::after {
   content: "";
   background-image: url(/public/assets/images/dotted-line.png);
   position: absolute;
@@ -362,8 +357,17 @@
   background-position: center;
   background-size: 100% 100%;
 }
-.opportunities_point:nth-last-child(1) span::after {
+.opportunities_point:nth-last-child(1) .opportunities_point_number::after {
   content: none;
+}
+.opportunities_point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+.opportunities_point p {
+  margin: 0;
 }
 .ellipse_purle,
 .ellipse_green,

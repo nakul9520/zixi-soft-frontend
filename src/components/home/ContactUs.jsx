@@ -16,7 +16,7 @@ const ContactUs = () => {
             <h3 className="mb-3">We’re Excited to Hear From You</h3>
           </div>
           <Row className="">
-            <Col xs={5}>
+            <Col xs={12} lg={5}>
               <div className="cantact_points_wrap">
                 <div className="cantact_point">
                   <span>01</span>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={7}>
+            <Col xs={12} lg={7}>
               <div className="consultant_contact_form">
                 <div className="card">
                   <div className="card-body">

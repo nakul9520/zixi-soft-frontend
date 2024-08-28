@@ -27,7 +27,10 @@ const Footer = () => {
           <Container>
             <Row>
               <Col xs={12} className="border-bottom">
-                <Stack direction="horizontal" className="align-items-start">
+                <Stack
+                  direction="horizontal"
+                  className=" footer_expertise_about_wrap align-items-start"
+                >
                   <div className="expertise_wrap pt-5">
                     <h5>Expertise</h5>
                     <Stack
@@ -50,15 +53,19 @@ const Footer = () => {
                       {map(expertiseData1, (item, i) => (
                         <React.Fragment key={i}>
                           <p>{item}</p>
-                          <div className="vr" />
+                          {i + 1 !== item.length ? (
+                            <div className="vr" />
+                          ) : null}
                         </React.Fragment>
                       ))}
                     </Stack>
                   </div>
-                  <div className="vr" />
+                  <div className="footer_mid_divider">
+                    <div className="vr" />
+                  </div>
                   <div className="about_wrap border-bottom pt-5">
-                    <h5 className="ps-4">About</h5>
-                    <p className="ps-4">
+                    <h5 className="ps-lg-4">About</h5>
+                    <p className="ps-lg-4">
                       We are an IT company offering a suite of web & mobile
                       application development services for diverse industry
                       verticals. Our breakthrough solutions, developed with the

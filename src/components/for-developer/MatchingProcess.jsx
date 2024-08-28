@@ -8,7 +8,7 @@ const MatchingProcess = () => {
       <section className="matching_process_section pt-4 pb-5">
         <Container>
           <Row className="d-flex align-items-center justify-content-center">
-            <Col xs={6}>
+            <Col xs={12} md={6}>
               <div className="">
                 <h3>Matching Process</h3>
                 <p>Ensure you onboard the right talent every time.</p>
@@ -49,7 +49,7 @@ const MatchingProcess = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={{ span: 5, offset: 1 }}>
+            <Col  xs={12} md={6} lg={{ span: 5, offset: 1 }}>
               <div class="card border-0 shadow rounded-4">
                 <div class="card-body p-4">
                   <div className="top_clip">

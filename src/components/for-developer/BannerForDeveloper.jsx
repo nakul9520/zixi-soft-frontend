@@ -37,7 +37,7 @@ const BannerForDeveloper = () => {
             </Col>
             <Col
               md={6}
-              className="position-relative h-100 d-flex align-items-end justify-content-end flex-column "
+              className="position-relative h-100 d-flex align-items-end justify-content-md-end flex-column "
             >
               <img
                 src={assetsObj.girlWithLaptop}

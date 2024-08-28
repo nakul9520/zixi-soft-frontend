@@ -8,6 +8,12 @@
   background-size: cover;
   height: 100vh;
 }
+.hero_section {
+  /* max-height: 100vh; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 .for_dev_banner_content h2,
 .for_dev_banner_content p {
@@ -107,13 +113,15 @@
   background-color: #fef6ef;
 }
 .hire_faq_card {
-  width: 300px;
-  height: 340px;
-  position: absolute;
-  left: -17%;
-  top: 7%;
-  /* bottom: 0; */
+  width: 270px;
+  max-height: 100%;
+  padding: 20px;
+  position: relative;
+  right: 90px;
+  top: 30px;
   margin: auto;
+  z-index: 5;
+  margin-bottom: 20px;
 }
 .faq_accordian .accordion-item {
   border: 0;
@@ -125,4 +133,16 @@
 }
 .faq_accordian .accordion-header {
   border-radius: 7px;
+}
+
+/* apply now mini banner */
+.apply_now_banner {
+  padding: 4rem 0;
+}
+.apply_now_banner .content_wrapper {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  overflow: hidden;
 }
