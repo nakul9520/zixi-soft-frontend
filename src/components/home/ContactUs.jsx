@@ -56,8 +56,8 @@ const ContactUs = () => {
             </Col>
             <Col xs={7}>
               <div className="consultant_contact_form">
-                <div class="card">
-                  <div class="card-body">
+                <div className="card">
+                  <div className="card-body">
                     <Form>
                       <Row>
                         <Col xs={6} className="mb-3">

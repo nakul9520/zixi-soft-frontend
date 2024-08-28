@@ -36,10 +36,10 @@ const Footer = () => {
                       gap={3}
                     >
                       {map(expertiseData, (item, i) => (
-                        <>
+                        <React.Fragment key={i}>
                           <p>{item}</p>
                           <div className="vr" />
-                        </>
+                        </React.Fragment>
                       ))}
                     </Stack>
                     <Stack
@@ -48,10 +48,10 @@ const Footer = () => {
                       gap={3}
                     >
                       {map(expertiseData1, (item, i) => (
-                        <>
+                        <React.Fragment key={i}>
                           <p>{item}</p>
                           <div className="vr" />
-                        </>
+                        </React.Fragment>
                       ))}
                     </Stack>
                   </div>
@@ -108,7 +108,7 @@ const Footer = () => {
                   <Stack direction="horizontal" className="flex-wrap" gap={3}>
                     <div>
                       <span className="me-3">
-                        <i class="bi bi-geo-alt-fill"></i>
+                        <i className="bi bi-geo-alt-fill"></i>
                       </span>
                       <span>
                         It is a long established fact that a reader will be
@@ -118,14 +118,14 @@ const Footer = () => {
                     <div className="vr" />
                     <div>
                       <span className="me-3">
-                        <i class="bi bi-envelope-fill"></i>
+                        <i className="bi bi-envelope-fill"></i>
                       </span>
                       <span>contact@zixisoft.com</span>
                     </div>
                     <div className="vr" />
                     <div>
                       <span className="me-3">
-                        <i class="bi bi-telephone-fill"></i>
+                        <i className="bi bi-telephone-fill"></i>
                       </span>
                       <span>+91 0987654321</span>
                     </div>

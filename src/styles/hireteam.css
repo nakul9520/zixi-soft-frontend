@@ -64,7 +64,7 @@
   opacity: 1;
   visibility: visible;
 }
-.avatar i{
+.avatar i {
   color: #fff;
 }
 .avatar img {
@@ -103,12 +103,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.6rem;
 }
 
 .hiring_model_section .model_card .img_wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Hiring MOdel End */
@@ -307,8 +306,34 @@
 /* Start Today section End */
 
 /* Success Stories Start */
-.success_stories_section{
+.success_stories_section {
   padding: 50px 0;
   overflow: hidden;
 }
+.success_stories_section .guarantee_card {
+  border: none;
+}
+.success_stories_section .guarantee_card .img_wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.success_stories_section .guarantee_card .img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.success_stories_section .guarantee_card .rating_wrapper i {
+  color: #fcb819;
+}
 /* Success Stories End */
+
+/* Talent Need Start */
+.talent_need_section {
+  padding: 50px 0;
+  background: #ff65020f;
+}
+
+
+/* Talent Need End */

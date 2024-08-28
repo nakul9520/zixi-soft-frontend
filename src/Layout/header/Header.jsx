@@ -1,7 +1,7 @@
 import CMButton from "@/components/common/CMButton";
 import { assetsObj } from "@/utils/images";
 import { map } from "lodash";
-import { Container, Stack } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { navLinks } from "./LinkConfig";
 
@@ -9,13 +9,9 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <>
-      <header className="fixed-top header_section">
-        <Container fluid>
-          <Stack
-            gap={3}
-            direction="horizontal"
-            className="align-items-center justify-content-center"
-          >
+      <Navbar expand="lg" className="fixed-top header_section">
+        <Container fluid className="gap-3">
+          <Navbar.Brand href="#">
             <div className="logo_wrapper">
               <img
                 src={assetsObj.logo}
@@ -24,29 +20,34 @@ const Header = () => {
                 onClick={() => navigate("/")}
               />
             </div>
-            <div className="header_right ms-auto">
-              <Stack
-                gap={3}
-                direction="horizontal"
-                className="align-items-center"
-              >
-                <ul className="header_menus">
-                  {map(navLinks, (item, i) => (
-                    <li className="body1" key={i}>
-                      {item.label}
-                    </li>
-                  ))}
-                </ul>
-                <div>
-                  <CMButton variant="gradient" color="primary" onClick={() => navigate("/hire-team")}>
-                    Hire Your Team
-                  </CMButton>
-                </div>
-              </Stack>
-            </div>
-          </Stack>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" className="ms-auto" />
+          <CMButton
+            className="d-block d-lg-none"
+            onClick={() => navigate("/hire-team")}
+          >
+            Hire Your Team
+          </CMButton>
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="ms-auto my-2 my-lg-0"
+              style={{ maxHeight: "100px" }}
+            >
+              {map(navLinks, (item, i) => (
+                <Nav.Link href="#action1" className="body1" key={i}>
+                  {item.label}
+                </Nav.Link>
+              ))}
+            </Nav>
+          </Navbar.Collapse>
+          <CMButton
+            className="d-none d-lg-block"
+            onClick={() => navigate("/hire-team")}
+          >
+            Hire Your Team
+          </CMButton>
         </Container>
-      </header>
+      </Navbar>
     </>
   );
 };
