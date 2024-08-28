@@ -31,7 +31,7 @@ const TeamSection = () => {
       <section className="teams_section py-5">
         <Container>
           <Row>
-            <Col xs={7}>
+            <Col xs={12} lg={7}>
               <Row>
                 <Col xs={12}>
                   <div className="common_heading mb-4">
@@ -42,7 +42,7 @@ const TeamSection = () => {
                   </div>
                 </Col>
                 {map(teamInfoData, (item, i) => (
-                  <Col xs={6} key={i}>
+                  <Col xs={12} sm={6} key={i}>
                     <div className="team_info_wrap mb-5">
                       <div className="team_info_wrap_icon">
                         <img
@@ -62,9 +62,9 @@ const TeamSection = () => {
                 ))}
               </Row>
             </Col>
-            <Col xs={5}>
-              <div className="teams_images_right">
-                <div className="teams_member_card_wrap teams_member_card_1">
+            <Col xs={12} lg={5}>
+              <div className="teams_images_right d-flex flex-column  align-items-sm-start align-items-lg-center">
+                <div className="teams_member_card_wrap teams_member_card_1 shadow">
                   <div className="img_wrap">
                     <img
                       src={assetsObj.teamMember2}
@@ -80,7 +80,7 @@ const TeamSection = () => {
                   <div className="team_member_info">
                     <h6>Marine Duo</h6>
                     <p>
-                      <i class="bi bi-patch-check-fill"></i> Verified
+                      <i className="bi bi-patch-check-fill"></i> Verified
                       Expert ​in Engineering
                     </p>
                     <p> JavaScript Developer</p>
@@ -103,7 +103,7 @@ const TeamSection = () => {
                   <div className="team_member_info">
                     <h6>Marine Duo</h6>
                     <p>
-                      <i class="bi bi-patch-check-fill"></i> Verified
+                      <i className="bi bi-patch-check-fill"></i> Verified
                       Expert ​in Engineering
                     </p>
                     <p> JavaScript Developer</p>

@@ -19,9 +19,9 @@ const HireDevelopers = () => {
             </Col>
           </Row>
           <Row className="">
-            <Col xs={7}>
+            <Col xs={12} lg={6}>
               <Row>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div className="hire_dev_content_wrap">
                     <div className="hire_dev_card_img">
                       <img
@@ -37,7 +37,7 @@ const HireDevelopers = () => {
                     </p>
                   </div>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div className="hire_dev_content_wrap">
                     <div className="hire_dev_card_img">
                       <img
@@ -54,7 +54,7 @@ const HireDevelopers = () => {
                     </p>
                   </div>
                 </Col>{" "}
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div className="hire_dev_content_wrap">
                     <div className="hire_dev_card_img">
                       <img
@@ -71,7 +71,7 @@ const HireDevelopers = () => {
                     </p>
                   </div>
                 </Col>
-                <Col xs={6}>
+                <Col xs={12} sm={6}>
                   <div className="hire_dev_content_wrap">
                     <div className="hire_dev_card_img">
                       <img
@@ -89,9 +89,9 @@ const HireDevelopers = () => {
                 </Col>
               </Row>
             </Col>
-            <Col xs={5}>
+            <Col xs={12} lg={6}>
               <div className="hire_dev_right">
-                <div className="hire_dev_img_wrap position-relative z-3">
+                <div className="hire_dev_img_wrap position-relative z-3 text-center">
                   <img
                     src={assetsObj.hireDevImg1}
                     alt="hire-dev-img-1"

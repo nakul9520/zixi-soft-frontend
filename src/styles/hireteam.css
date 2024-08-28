@@ -6,7 +6,7 @@
 }
 
 .hire_team_banner .banner_image {
-  height: 600px;
+  width: 100%;
   position: absolute;
   bottom: -20px;
   left: 0;
@@ -64,7 +64,7 @@
   opacity: 1;
   visibility: visible;
 }
-.avatar i{
+.avatar i {
   color: #fff;
 }
 .avatar img {
@@ -103,12 +103,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.6rem;
 }
 
 .hiring_model_section .model_card .img_wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Hiring MOdel End */
@@ -307,8 +306,110 @@
 /* Start Today section End */
 
 /* Success Stories Start */
-.success_stories_section{
+.success_stories_section {
   padding: 50px 0;
   overflow: hidden;
 }
+.success_stories_section .guarantee_card {
+  border: none;
+}
+.success_stories_section .guarantee_card .img_wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.success_stories_section .guarantee_card .img_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.success_stories_section .guarantee_card .rating_wrapper i {
+  color: #fcb819;
+}
 /* Success Stories End */
+
+/* Talent Need Start */
+.talent_need_section {
+  padding: 50px 0;
+  background: #ff65020f;
+}
+
+.talent_need_section .talent_card {
+  border: 1px solid #f8981d;
+  border-radius: 30px;
+  width: 70%;
+}
+.talent_need_section .talent_card:not(:last-child) {
+  margin-bottom: 6rem;
+}
+
+.talent_need_section .talent_card .avatar_wrapper {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.talent_need_section .talent_card .avatar_wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* For odd cards, add an image before the card except the last one */
+.talent_need_section .talent_card:nth-child(odd):not(:last-child)::before {
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin-bottom: 10px;
+  background-image: url("../assets/arrow-frame-right.png"); /* Image URL */
+  background-size: contain; /* Cover the entire area */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  position: absolute;
+  right: -19%;
+  top: 50%;
+}
+
+/* For even cards, add an image after the card except the last one */
+.talent_need_section .talent_card:nth-child(even):not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 150px; /* Set the width */
+  height: 150px; /* Set the height */
+  margin-bottom: 10px;
+  background-image: url("../assets/arrow-frame-left.png"); /* Image URL */
+  background-size: contain; /* Cover the entire area */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the image */
+  position: absolute;
+  left: -5%;
+}
+/* Talent Need End */
+@media only screen and (max-width: 1400px) {
+  .hire_team_banner .banner_image {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hire_team_banner {
+    height: 100%;
+    padding: 100px 0;
+  }
+  .hire_team_banner .banner_image {
+    position: unset;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .hire_team_banner {
+    padding: 50px 0;
+  }
+  .hire_team_banner .banner_image {
+    width: 80%;
+    margin: auto;
+  }
+}

@@ -22,11 +22,12 @@ const ScheduleCall = () => {
                   <CMButton className="rounded-5">Schedule Call</CMButton>
                 </div>
               </Col>
-              <Col md={4}>
+              <Col md={4} className="text-center">
                 <img
                   src={assetsObj.scheduleCallImage}
                   alt="vector call image"
-                  className="img-fluid"
+                  className="w-75 w-md-100 h-100 mx-auto"
+                  style={{ objectFit: "contain", objectPosition: "bottom" }}
                 />
               </Col>
             </Row>

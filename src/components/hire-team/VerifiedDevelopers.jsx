@@ -10,28 +10,27 @@ const VerifiedDevelopers = () => {
     responsive: {
       0: {
         items: 1,
+        stagePadding: 0,
       },
       576: {
         items: 1,
       },
       768: {
-        items: 1,
+        items: 2,
+        stagePadding: 50,
       },
       992: {
-        items: 1,
-      },
-      1200: {
         items: 2,
       },
       1400: {
-        items: 2,
+        items: 3,
       },
     },
     nav: true,
     dots: false,
     navText: [
-      "<i class='bi bi-arrow-left'></i>",
-      "<i class='bi bi-arrow-right'></i>",
+      "<i className='bi bi-arrow-left'></i>",
+      "<i className='bi bi-arrow-right'></i>",
     ],
   };
 
@@ -163,10 +162,10 @@ const VerifiedDevelopers = () => {
           background: `linear-gradient(to bottom, rgba(37, 38, 56, 0.9), rgba(37, 38, 56, 0.9)),url(${assetsObj.developerBG})`,
         }}
       >
-        <Container fluid="lg" className="me-0 pe-0">
-          <h3 className="text-light mb-3">Verified Developers</h3>
-          <Row>
-            <Col md={4}>
+        <h3 className="text-light px-4 mb-5">Verified Developers</h3>
+        <Row>
+          <Col lg={4} xl={3} className="mb-4 mb-lg-0">
+            <div className="px-4">
               <p className="text-light fw-normal mb-4">
                 All our developers are carefully checked for their skills and
                 experience to ensure high-quality work.
@@ -178,65 +177,65 @@ const VerifiedDevelopers = () => {
                   </li>
                 ))}
               </ul>
-            </Col>
-            <Col md={8} className="position-relative">
-              <OwlCarousel
-                className="owl-theme section"
-                loop
-                margin={30}
-                autoPlay={true}
-                {...options}
-              >
-                {map(data, (item, i) => (
-                  <Card key={i} className="developer_card">
-                    <div className="top_block">
-                      <div className="expe_label secondary_font">
-                        Experience : {item.experience}
+            </div>
+          </Col>
+          <Col lg={8} xl={9} className="position-relative">
+            <OwlCarousel
+              className="owl-theme"
+              loop
+              margin={30}
+              autoPlay={true}
+              {...options}
+            >
+              {map(data, (item, i) => (
+                <Card key={i} className="developer_card">
+                  <div className="top_block">
+                    <div className="expe_label secondary_font">
+                      Experience : {item.experience}
+                    </div>
+                  </div>
+                  <Card.Body className="position-relative">
+                    <div className="img_wrapper">
+                      <img src={item.avatar} alt="avatar" />
+                    </div>
+                    <div className="mb-5">
+                      <div className="ms-auto designation_label secondary_font">
+                        {item.designation}
                       </div>
                     </div>
-                    <Card.Body className="position-relative">
-                      <div className="img_wrapper">
-                        <img src={item.avatar} alt="avatar" />
-                      </div>
-                      <div className="mb-5">
-                        <div className="ms-auto designation_label secondary_font">
-                          {item.designation}
+                    <h3 className="mb-2 secondary_font fw-bolder">
+                      {item.name}
+                    </h3>
+                    <p className="text_dark_light mb-3">{item.desc}</p>
+                    <Stack
+                      direction="horizontal"
+                      className="align-items-center flex-wrap mb-4"
+                      gap={2}
+                    >
+                      {map(item.skills, (sub_item, index) => (
+                        <div key={index} className="skill_wrapper">
+                          {sub_item}
                         </div>
-                      </div>
-                      <h3 className="mb-2 secondary_font fw-bolder">
-                        {item.name}
-                      </h3>
-                      <p className="text_dark_light mb-3">{item.desc}</p>
-                      <Stack
-                        direction="horizontal"
-                        className="align-items-center flex-wrap mb-4"
-                        gap={2}
+                      ))}
+                    </Stack>
+                    <div className="text-end">
+                      <CMButton
+                        variant="soft"
+                        color="orange"
+                        className="rounded-5"
                       >
-                        {map(item.skills, (sub_item, index) => (
-                          <div key={index} className="skill_wrapper">
-                            {sub_item}
-                          </div>
-                        ))}
-                      </Stack>
-                      <div className="text-end">
-                        <CMButton
-                          variant="soft"
-                          color="orange"
-                          className="rounded-5"
-                        >
-                          Availability : {item.availability}
-                        </CMButton>
-                      </div>
-                    </Card.Body>
-                  </Card>
-                ))}
-              </OwlCarousel>
-              <h5 className="text-light secondary_font profile_btn">
-                View Profile
-              </h5>
-            </Col>
-          </Row>
-        </Container>
+                        Availability : {item.availability}
+                      </CMButton>
+                    </div>
+                  </Card.Body>
+                </Card>
+              ))}
+            </OwlCarousel>
+            <h5 className="text-light secondary_font profile_btn">
+              View Profile
+            </h5>
+          </Col>
+        </Row>
       </section>
     </>
   );

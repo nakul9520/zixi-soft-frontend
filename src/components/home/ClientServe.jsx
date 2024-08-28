@@ -10,13 +10,13 @@ const ClientServe = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <div className="common_heading text-center">
+              <div className="common_heading text-center mb-5">
                 <h3>We Serve our clients in 3 ways</h3>
               </div>
             </Col>
           </Row>
-          <Row className="my-5">
-            <Col xs={6}>
+          <Row>
+            <Col xs={12} lg={6} sm={6} className="mb-5">
               <div className="client_serve_points">
                 <h6>Project based work</h6>
                 <ul>
@@ -31,8 +31,7 @@ const ClientServe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={1}></Col>
-            <Col xs={5}>
+            <Col xs={12} sm={6} lg={{ span: 5, offset: 1 }} className="mb-5">
               <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}
@@ -58,8 +57,8 @@ const ClientServe = () => {
               </div>
             </Col>
           </Row>
-          <Row className="my-5">
-            <Col xs={5}>
+          <Row>
+            <Col xs={12} lg={6} sm={6} className="mb-5">
               <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}
@@ -78,8 +77,7 @@ const ClientServe = () => {
                 />
               </div>
             </Col>
-            <Col xs={2}></Col>
-            <Col xs={{ span: 5 }}>
+            <Col xs={12} sm={6} lg={{ span: 5, offset: 1 }} className="mb-5">
               <div className="client_serve_points">
                 <h6>Dedicated team</h6>
                 <ul>
@@ -95,8 +93,8 @@ const ClientServe = () => {
               </div>
             </Col>
           </Row>
-          <Row className="mt-5">
-            <Col xs={6}>
+          <Row>
+            <Col xs={12} lg={6} sm={6} className="mb-5">
               <div className="client_serve_points">
                 <h6>Staff Augmentation</h6>
                 <ul>
@@ -111,8 +109,7 @@ const ClientServe = () => {
                 </div>
               </div>
             </Col>
-            <Col xs={1}></Col>
-            <Col xs={5}>
+            <Col xs={12} sm={6} lg={{ span: 5, offset: 1 }} className="mb-5">
               <div className="client_serve_img_wrap position-relative">
                 <img
                   src={assetsObj.client_img1}

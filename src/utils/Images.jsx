@@ -58,6 +58,13 @@ export const assetsObj = {
   paytmLogo: `${imagePath}images/paytm.png`,
   spotifyLogo: `${imagePath}images/spotify.png`,
   techImage: `${imagePath}images/tech-img-1.png`,
+  cgiLogo: `${imagePath}images/cgi-logo.png`,
+  navsoftLogo: `${imagePath}images/navsoft-logo.png`,
+  pubmaticLogo: `${imagePath}images/pubmatic-logo.png`,
+  fiservLogo: `${imagePath}images/fiserv-logo.png`,
+  dayLayerActive: `${imagePath}images/day-layer-active.png`,
+  dayLayerDeActive: `${imagePath}images/day-layer-de-active.png`,
+  clipIcon1: `${imagePath}images/clip-icon1.png`,
 
 
 
@@ -69,6 +76,7 @@ export const assetsObj = {
   avatar2: `${imagePath}images/avatar-2.png`,
   avatar3: `${imagePath}images/avatar-3.png`,
   avatar4: `${imagePath}images/avatar-4.png`,
+  avatar5: `${imagePath}images/avatar-5.png`,
   talentIcon: `${imagePath}icon/talents-icon.png`,
   hiringModelIcon1: `${imagePath}icon/hiring-model-1.png`,
   hiringModelIcon2: `${imagePath}icon/hiring-model-2.png`,
@@ -81,4 +89,10 @@ export const assetsObj = {
   moneyBack: `${imagePath}icon/money-back-icon.svg`,
   freeReplacement: `${imagePath}icon/free-replacement.svg`,
   StartTodayBG: `${imagePath}images/start-today-BG.png`,
+  talentImg1: `${imagePath}images/talent-img-1.png`,
+  talentImg2: `${imagePath}images/talent-img-2.png`,
+  talentImg3: `${imagePath}images/talent-img-3.png`,
+  talentImg4: `${imagePath}images/talent-img-4.png`,
+  talentImg5: `${imagePath}images/talent-img-5.png`,
+  talentImg6: `${imagePath}images/talent-img-6.png`,
 };

@@ -18,7 +18,7 @@ const DiscoverOpportunities = () => {
             <h3>Discover Multiple Career Opportunities</h3>
           </div>
           <Row className="d-flex align-items-center justify-content-center">
-            <Col xs={5}>
+            <Col xs={12} sm={5}>
               <div className="">
                 <p>
                   Discover various job roles at ZIXISOFT. Whether you're skilled
@@ -44,12 +44,12 @@ const DiscoverOpportunities = () => {
                   ))}
                   <div className="avatar">
                     {/* <img src={assetsObj.talentIcon} alt="Image" /> */}
-                    <i class="bi bi-plus-lg"></i>
+                    <i className="bi bi-plus-lg"></i>
                   </div>
                 </div>
               </div>
             </Col>
-            <Col xs={7}>
+            <Col xs={12} sm={7}>
               <img
                 src={assetsObj.muiltipleOpoortunitiesImg}
                 alt="language chart"

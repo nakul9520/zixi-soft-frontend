@@ -12,9 +12,9 @@ const HireTeamBanner = () => {
   return (
     <>
       <section className="hire_team_banner d-flex align-items-center justify-content-center">
-        <Container fluid="md" className="h-100">
+        <Container fluid="lg" className="h-100">
           <Row className="align-items-center h-100">
-            <Col md={6}>
+            <Col md={6} className="mb-5 mb-md-0">
               <h2>
                 Find <span className="gradient_heading">remote</span> talent
               </h2>

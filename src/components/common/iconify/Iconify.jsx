@@ -4,17 +4,20 @@ import { Icon } from "@iconify/react";
 
 const Iconify = forwardRef(function Iconify(
   { icon, width = 20, style, ...other },
+
   ref
 ) {
   return (
-    <div
-      ref={ref}
-      component={Icon}
-      icon={icon}
-      style={{ width, height: width, ...style }}
-      {...other}
-      className="cursor-pointer"
-    />
+    <>
+    {console.log("adad>>",icon)}
+      <Icon 
+        ref={ref}
+        icon={icon}
+        style={{ width, height: width, ...style }}
+        {...other}
+        className=""
+      />
+    </>
   );
 });
 

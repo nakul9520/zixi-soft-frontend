@@ -5,7 +5,15 @@ import { Col, Container, Row } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 
 const Techstack = () => {
-  const options = {
+  const optionsSlider1 = {
+    margin: 30,
+    responsiveClass: true,
+    nav: false,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    rtl: true,
     responsive: {
       0: {
         items: 1,
@@ -14,10 +22,10 @@ const Techstack = () => {
         items: 1,
       },
       600: {
-        items: 1,
+        items: 2,
       },
       700: {
-        items: 1,
+        items: 2,
       },
       800: {
         items: 2,
@@ -26,15 +34,51 @@ const Techstack = () => {
         items: 4,
       },
     },
+  };
+  const optionsSlider2 = {
+    margin: 30,
+    responsiveClass: true,
     nav: false,
-    dots: true,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    rtl: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      700: {
+        items: 2,
+      },
+      800: {
+        items: 2,
+      },
+      1000: {
+        items: 4,
+      },
+    },
   };
 
-  const data = [
-    { title: "jQuery", icon: assetsObj.jquery_icon },
-    { title: "Mongodb", icon: assetsObj.mongodb_icon },
-    { title: "Java", icon: assetsObj.java_icon },
-    { title: "Android", icon: assetsObj.android_icon },
+  // const data = [
+  //   { title: "jQuery", icon: assetsObj.jquery_icon },
+  //   { title: "Mongodb", icon: assetsObj.mongodb_icon },
+  //   { title: "Java", icon: assetsObj.java_icon },
+  //   { title: "Android", icon: assetsObj.android_icon },
+  // ];
+  const dreamCompanyLogoData = [
+    { logo: assetsObj.paytmLogo },
+    { logo: assetsObj.dunzoLogo },
+    { logo: assetsObj.spotifyLogo },
+    { logo: assetsObj.airbnbLogo },
+    { logo: assetsObj.amazonLogo },
+    { logo: assetsObj.googleLogo },
   ];
   return (
     <>
@@ -53,13 +97,13 @@ const Techstack = () => {
         </Container>
         <div className="tech_stack_cards_wrap mt-4">
           <OwlCarousel
-            className="owl-theme section"
+            className="owl-theme tech_stack_barand_logo_slider1"
             loop
-            margin={30}
+            // margin={30}
             autoplay
-            {...options}
+            {...optionsSlider1}
           >
-            {map(data, (item, i) => (
+            {/* {map(data, (item, i) => (
               <div className="tech_stack_card" key={i}>
                 <div className="tech_desc">
                   <h6 className="secondary_font">{item.title} </h6>
@@ -69,25 +113,29 @@ const Techstack = () => {
                   <img src={item.icon} className="img-fluid" alt="" />
                 </div>
               </div>
+            ))} */}
+            {map(dreamCompanyLogoData, (item, i) => (
+              <div className="barnd_logo_card">
+                <div className="brand_logo" key={i}>
+                  <img src={item.logo} className="img-fluid" alt="" />
+                </div>
+              </div>
             ))}
           </OwlCarousel>
         </div>
         <div className="tech_stack_cards_wrap mt-4">
           <OwlCarousel
-            className="owl-theme section"
+            className="owl-theme section tech_stack_barand_logo_slider2"
             loop
             margin={30}
             autoplay
-            {...options}
+            rtl
+            {...optionsSlider2}
           >
-            {map(data, (item, i) => (
-              <div className="tech_stack_card">
-                <div className="tech_desc">
-                  <h6 className="secondary_font">{item.title} </h6>
-                  <span>10 month engagement</span>
-                </div>
-                <div className="tech_stack_img">
-                  <img src={item.icon} className="img-fluid" alt="" />
+            {map(dreamCompanyLogoData, (item, i) => (
+              <div className="barnd_logo_card">
+                <div className="brand_logo" key={i}>
+                  <img src={item.logo} className="img-fluid" alt="" />
                 </div>
               </div>
             ))}

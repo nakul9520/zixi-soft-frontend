@@ -46,42 +46,62 @@
 .apply_for_job_section {
   background-color: #11cd7e0f;
 }
-
 /* matching process css */
 .matching_process_section {
   background-color: #fef6ef;
 }
-
-.day_box_design {
-  display: flex;
-  gap: 40px;
-  background-color: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  position: relative;
-  border: 1px solid #fcb819;
-}
-
-.day_box_design::after {
-  content: "";
+.day_box_point_content {
   position: absolute;
-  border: 1px solid #fcb819;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-  width: 40px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 6%;
+  margin: auto;
   height: 100%;
-  background-color: #fff;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
 }
-
+.top_clip {
+  width: 100px;
+  margin-bottom: 40px;
+}
 /* Jobon zixi soft section css */
 .Jobon_zixi_soft_section {
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
+  padding: 5rem 0;
 }
+.developer_type_card_wrap .developer_type_card_content {
+  padding-top: 5rem;
+  position: relative;
+}
+.developer_type_card_content .card-text {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+.developer_type_card_logo {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -7%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.developer_type_slider .owl-stage-outer {
+  padding-top: 3rem;
+}
+.developer_type_slider .owl-dots {
+  display: none;
+}
+
 /* FAQ ForDeveloper css */
 .faq_for_developer_section {
   background-color: #fef6ef;
