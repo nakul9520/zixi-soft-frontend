@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import PrimaryButton from "../PrimaryButton";
 import { assetsObj } from "@/utils/Images";
+import PrimaryButton from "../common/PrimaryButton";
 
 const Banner = () => {
   return (
@@ -10,8 +10,8 @@ const Banner = () => {
         className="banner_section d-flex align-items-center justify-content-center"
         style={{ backgroundImage: `url(${assetsObj.banner_bg_image})` }}
       >
-        <Container>
-          <Row className="align-items-center justify-content-center">
+        <Container className="h-100">
+          <Row className="align-items-center justify-content-center h-100">
             <Col lg={6} xs={12}>
               <div className="banner_content_wrap">
                 <h1 className="main_heading">
