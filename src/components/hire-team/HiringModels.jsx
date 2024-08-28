@@ -68,7 +68,7 @@ const HiringModels = () => {
             <h3>Get the Best Talent with Our Hiring Models</h3>
             <CMButton
               className="rounded-5"
-              endicon={<i className="bi bi-arrow-right"></i>}
+              endicon={<i class="bi bi-arrow-right"></i>}
             >
               Hire Developer
             </CMButton>

@@ -91,7 +91,7 @@ const HiringExpert = () => {
                         <a href="#" className="me-2">
                           Read more
                         </a>
-                        <i className="bi bi-arrow-right"></i>
+                        <i class="bi bi-arrow-right"></i>
                       </div>
                     </Card.Body>
                   </Card>

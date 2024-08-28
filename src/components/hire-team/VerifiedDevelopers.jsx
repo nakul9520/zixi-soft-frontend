@@ -10,7 +10,7 @@ const VerifiedDevelopers = () => {
     responsive: {
       0: {
         items: 1,
-        stagePadding: 0,
+        stagePadding: 20,
       },
       576: {
         items: 1,
@@ -29,8 +29,8 @@ const VerifiedDevelopers = () => {
     nav: true,
     dots: false,
     navText: [
-      "<i className='bi bi-arrow-left'></i>",
-      "<i className='bi bi-arrow-right'></i>",
+      "<i class='bi bi-arrow-left'></i>",
+      "<i class='bi bi-arrow-right'></i>",
     ],
   };
 

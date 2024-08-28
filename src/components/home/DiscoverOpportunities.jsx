@@ -27,7 +27,7 @@ const DiscoverOpportunities = () => {
                 </p>
                 <PrimaryButton
                   btnLabel="Register With Us Today"
-                  endIcon={<i className="bi bi-arrow-right"></i>}
+                  endIcon={<i class="bi bi-arrow-right"></i>}
                 />
               </div>
               <div className="join_dev_part">
@@ -44,7 +44,7 @@ const DiscoverOpportunities = () => {
                   ))}
                   <div className="avatar">
                     {/* <img src={assetsObj.talentIcon} alt="Image" /> */}
-                    <i className="bi bi-plus-lg"></i>
+                    <i class="bi bi-plus-lg"></i>
                   </div>
                 </div>
               </div>
