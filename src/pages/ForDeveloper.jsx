@@ -6,6 +6,8 @@ import GlobalOpportunities from "@/components/for-developer/GlobalOpportunities"
 import ApplyForJob from "@/components/for-developer/ApplyForJob";
 import MatchingProcess from "@/components/for-developer/MatchingProcess";
 import ApplyNowBanner from "@/components/for-developer/ApplyNowBanner";
+import FAQForDeveloper from "@/components/for-developer/FAQForDeveloper";
+import JobOnZixisoft from "@/components/for-developer/JobOnZixisoft";
 
 const ForDeveloper = () => {
   return (
@@ -15,6 +17,8 @@ const ForDeveloper = () => {
       <GlobalOpportunities />
       <ApplyForJob />
       <MatchingProcess />
+      <JobOnZixisoft />
+      <FAQForDeveloper />
       <ApplyNowBanner />
     </>
   );

@@ -53,26 +53,56 @@
 }
 
 .day_box_design {
-    display: flex;
-    gap: 40px;
-    background-color: #fff;
-    padding: 10px 20px;
-    border-radius: 30px;
-    position: relative;  
-    border: 1px solid #FCB819;
+  display: flex;
+  gap: 40px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  position: relative;
+  border: 1px solid #fcb819;
 }
 
 .day_box_design::after {
-    content: '';
-    position: absolute;
-    border: 1px solid #FCB819;
-    top: 50%;
-    right: -20px; 
-    transform: translateY(-50%);
-    width: 40px;
-    height: 100%;
-    background-color: #fff; 
-    clip-path: polygon(0 0, 100% 50%, 0 100%); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  content: "";
+  position: absolute;
+  border: 1px solid #fcb819;
+  top: 50%;
+  right: -20px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 100%;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Jobon zixi soft section css */
+.Jobon_zixi_soft_section {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+}
+/* FAQ ForDeveloper css */
+.faq_for_developer_section {
+  background-color: #fef6ef;
+}
+.hire_faq_card {
+  width: 300px;
+  height: 340px;
+  position: absolute;
+  left: -17%;
+  top: 7%;
+  /* bottom: 0; */
+  margin: auto;
+}
+.faq_accordian .accordion-item {
+  border: 0;
+  margin: 10px 0;
+}
+.faq_accordian .accordion-item .accordion-button {
+  background-color: #ffede1;
+  border-radius: 7px;
+}
+.faq_accordian .accordion-header {
+  border-radius: 7px;
+}
