@@ -69,7 +69,7 @@ const HiringExpert = () => {
             />
             <Row className="">
               {map(hiringExpertContent, (item, i) => (
-                <Col md={3} key={i}>
+                <Col xs={12} sm={6} lg={3} key={i}>
                   <Card
                     className="hire_card mb-5 border-0 rounded-4"
                     style={{ background: item.background_color }}

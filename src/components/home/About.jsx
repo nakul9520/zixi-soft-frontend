@@ -14,14 +14,18 @@ const About = () => {
             alt="logo_first_letter"
           />
         </div>
-        <Container>
+        <Container fluid="md">
           <Row>
-            <Col xs={4}>
+            <Col xs={12} sm={4}>
               <div>
                 <h3>Why companies choose Sourcebae</h3>
               </div>
             </Col>
-            <Col xs={{ span: 6, offset: 2 }}>
+            <Col
+              xs={12}
+              sm={{ span: 7, offset: 1 }}
+              md={{ span: 6, offset: 2 }}
+            >
               <p className="subtitle1">
                 SourceBae will help you find the best tech experts; Our AI tools
                 ensure candidate's skills and experience to build a professional

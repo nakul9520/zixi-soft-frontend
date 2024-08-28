@@ -1,0 +1,113 @@
+/* Screen Resolution Big screen Laptop 1920x1080 Media:- */
+@media only screen and (min-width: 1920px) {
+}
+
+/* For MacBook Pro Laptop 1440x990 Media Query:- */
+@media only screen and (min-width: 1367px) and (max-width: 1649px) {
+}
+
+/* For Small Desktop Screen Resolution 1366x768 Media:- */
+@media only screen and (max-width: 1366px) {
+}
+
+/* For Ipad-Pro devices 1024x1366 Media Query:- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner_section {
+    height: 45vh;
+  }
+  .teams_member_card_1 {
+    width: 70%;
+  }
+  .teams_member_card_2 {
+    width: 70%;
+  }
+}
+
+/* For Ipad-Pro devices 1024x1366 Media Query:- */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+}
+
+/* For Ipad devices 768x1024 Media Query:- */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .client_serve_img_wrap .ellipse_yellow {
+    width: 130px;
+  }
+  .client_serve_img_wrap .ellipse_blue_pink {
+    right: -8%;
+    width: 90px;
+  }
+  .client_serve_img_wrap .ellipse_skyblue {
+    width: 90px;
+  }
+}
+
+/* For Mobile devices and tablet both Media Query:- */
+@media only screen and (max-width: 991px) {
+  .banner_section {
+    height: 100vh;
+  }
+  .hire_dev_img1 {
+    width: 80%;
+  }
+  .hire_dev_img2 {
+    width: 80%;
+  }
+  .blue_border_gradient {
+    right: -4%;
+  }
+}
+
+/* For Mobile devices Media Query:- */
+@media only screen and (max-width: 767px) {
+  .logo_wrapper {
+    max-width: 100px;
+  }
+}
+/* For Mobile devices Media Query:- */
+@media only screen and (max-width: 500px) {
+  .about_statics_wrap {
+    flex-wrap: wrap;
+  }
+  .about_statics_wrap .about_statics {
+    border: 0;
+  }
+  /* client serve by home css */
+  .client_serve_img_wrap .ellipse_yellow {
+    right: -10%;
+    width: 100px;
+  }
+  .client_serve_img_wrap .ellipse_blue_pink {
+    right: -10%;
+    width: 100px;
+  }
+  .client_serve_img_wrap .ellipse_skyblue {
+    top: -10%;
+    left: -7%;
+    width: 90px;
+  }
+  .client_serve_img_wrap .second_ellipse_green {
+    bottom: -14%;
+    right: -7%;
+    width: 70px;
+  }
+
+  .purple_border_gradient {
+    right: 4%;
+    top: -6%;
+    max-width: 70px;
+  }
+  .blue_border_gradient {
+    right: -5%;
+    bottom: 7%;
+    width: 70px;
+  }
+  .expert_hire_purple_layer,
+  .expert_hire_blue_layer,
+  .expert_hire_yellow_layer {
+    display: none;
+  }
+  .teams_member_card_2,
+  .teams_member_card_1 {
+    width: 80%;
+  }
+}

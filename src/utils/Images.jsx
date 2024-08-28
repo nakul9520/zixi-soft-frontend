@@ -58,6 +58,13 @@ export const assetsObj = {
   paytmLogo: `${imagePath}images/paytm.png`,
   spotifyLogo: `${imagePath}images/spotify.png`,
   techImage: `${imagePath}images/tech-img-1.png`,
+  cgiLogo: `${imagePath}images/cgi-logo.png`,
+  navsoftLogo: `${imagePath}images/navsoft-logo.png`,
+  pubmaticLogo: `${imagePath}images/pubmatic-logo.png`,
+  fiservLogo: `${imagePath}images/fiserv-logo.png`,
+  dayLayerActive: `${imagePath}images/day-layer-active.png`,
+  dayLayerDeActive: `${imagePath}images/day-layer-de-active.png`,
+  clipIcon1: `${imagePath}images/clip-icon1.png`,
 
 
 
