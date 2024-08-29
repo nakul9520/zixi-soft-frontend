@@ -4,6 +4,7 @@ import { map } from "lodash";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { navLinks } from "./LinkConfig";
+import LookingDeveloper from "@/components/LookingDeveloper";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -47,6 +48,7 @@ const Header = () => {
             Hire Your Team
           </CMButton>
         </Container>
+        <LookingDeveloper />
       </Navbar>
     </>
   );
