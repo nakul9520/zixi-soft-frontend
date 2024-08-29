@@ -35,7 +35,7 @@ const About = () => {
               <div className="about_btn">
                 <PrimaryButton
                   btnLabel="Learn more about"
-                  endIcon={<i className="bi bi-arrow-right"></i>}
+                  endIcon={<i class="bi bi-arrow-right"></i>}
                 />
               </div>
             </Col>

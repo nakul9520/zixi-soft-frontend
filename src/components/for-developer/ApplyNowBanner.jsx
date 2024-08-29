@@ -6,7 +6,7 @@ import CMButton from "../common/CMButton";
 const ApplyNowBanner = () => {
   return (
     <>
-      <section className="start_today">
+      <section className="apply_now_banner">
         <Container fluid>
           <div
             className="content_wrapper"

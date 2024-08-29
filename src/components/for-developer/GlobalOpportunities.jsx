@@ -7,14 +7,14 @@ const GlobalOpportunities = () => {
       <section className="global_opportunity_section py-5">
         <Container>
           <Row className="d-flex align-items-center justify-content-center">
-            <Col xs={6}>
+            <Col xs={12} md={6}>
               <h2>Global Opportunities</h2>
               <p>
                 Work on cutting-edge projects that push the boundaries of
                 technology and innovation.
               </p>
             </Col>
-            <Col xs={{ span: 5, offset: 1 }}>
+            <Col xs={12} md={6} lg={{ span: 5, offset: 1 }}>
               <video
                 className="rounded-4"
                 controls

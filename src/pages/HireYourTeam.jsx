@@ -8,11 +8,13 @@ import Guarantee from "@/components/hire-team/Guarantee";
 import StartToday from "@/components/hire-team/StartToday";
 import SuccessStories from "@/components/hire-team/SuccessStories";
 import TalentNeed from "@/components/hire-team/TalentNeed";
+import ZixiSoftRightChoice from "@/components/hire-team/ZixiSoftRightChoice";
 const HireYourTeam = () => {
   return (
     <>
       <HireTeamBanner />
       <HiringModels />
+      <ZixiSoftRightChoice />
       <VerifiedDevelopers />
       <TalentNeed />
       <ScheduleCall />

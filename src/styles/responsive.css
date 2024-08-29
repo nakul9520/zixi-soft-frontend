@@ -21,10 +21,17 @@
   .teams_member_card_2 {
     width: 70%;
   }
+  .hire_team_banner {
+    height: 50vh;
+  }
 }
 
 /* For Ipad-Pro devices 1024x1366 Media Query:- */
 @media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .hire_faq_card {
+    right: 28px;
+    width: 250px;
+  }
 }
 
 /* For Ipad devices 768x1024 Media Query:- */
@@ -38,6 +45,16 @@
   }
   .client_serve_img_wrap .ellipse_skyblue {
     width: 90px;
+  }
+  .opportunities_point span {
+    width: 60px;
+    height: 45px;
+  }
+  .header_section {
+    background: #fff;
+  }
+  .header_section .navbar-nav {
+    align-items: center;
   }
 }
 
@@ -55,12 +72,52 @@
   .blue_border_gradient {
     right: -4%;
   }
+  .ellipse_purle {
+    width: 100px;
+  }
+  .rectangle_yellow_layer {
+    bottom: -11%;
+    left: -24px;
+    width: 80px;
+  }
+  .consultant_contact_form {
+    margin: 20px 0;
+  }
+
+  /* footer css */
+  .footer_expertise_about_wrap {
+    flex-wrap: wrap;
+  }
+  .about_wrap {
+    width: 100%;
+  }
+  .footer_mid_divider.vr {
+    display: none;
+  }
+
+  .hire_faq_card {
+    width: 100%;
+    position: unset;
+  }
 }
 
 /* For Mobile devices Media Query:- */
 @media only screen and (max-width: 767px) {
   .logo_wrapper {
     max-width: 100px;
+  }
+  /* footer */
+  .footer_meetup .vr {
+    display: none;
+  }
+  .apply_now_banner {
+    padding: 2rem 0;
+  }
+
+  .expert_hire_purple_layer,
+  .expert_hire_blue_layer,
+  .expert_hire_yellow_layer {
+    display: none;
   }
 }
 /* For Mobile devices Media Query:- */
@@ -101,13 +158,20 @@
     bottom: 7%;
     width: 70px;
   }
-  .expert_hire_purple_layer,
-  .expert_hire_blue_layer,
-  .expert_hire_yellow_layer {
-    display: none;
-  }
   .teams_member_card_2,
   .teams_member_card_1 {
     width: 80%;
+  }
+  .opportunities_point .opportunities_point_number {
+    height: 46px;
+  }
+  .expertise_wrap {
+    width: 100%;
+  }
+  .expertise_wrap .hstack {
+    display: block;
+  }
+  .expertise_wrap .hstack .vr {
+    display: none;
   }
 }

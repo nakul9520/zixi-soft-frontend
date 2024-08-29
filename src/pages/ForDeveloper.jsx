@@ -15,8 +15,8 @@ const ForDeveloper = () => {
       <BannerForDeveloper />
       <DeveloperDreamCompany />
       <GlobalOpportunities />
-      <ApplyForJob />
-      <MatchingProcess />
+      {/* <ApplyForJob /> */}
+      {/* <MatchingProcess /> */}
       <JobOnZixisoft />
       <FAQForDeveloper />
       <ApplyNowBanner />

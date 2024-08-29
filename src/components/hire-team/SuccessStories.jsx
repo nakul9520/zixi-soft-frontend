@@ -124,6 +124,7 @@ const SuccessStories = () => {
             <Card
               className="guarantee_card"
               style={{ background: item.background_color }}
+              key={i}
             >
               <Card.Body>
                 <div className="d-flex align-items-center gap-2 mb-3">
@@ -169,6 +170,7 @@ const SuccessStories = () => {
             <Card
               className="guarantee_card"
               style={{ background: item.background_color }}
+              key={i}
             >
               <Card.Body>
                 <div className="d-flex align-items-center gap-2 mb-3">

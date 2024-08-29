@@ -13,6 +13,10 @@ export const assetsObj = {
   client_img2: `${imagePath}images/client-serve-img-2.png`,
   client_img3: `${imagePath}images/client-serve-img-3.png`,
   learning_system_icon: `${imagePath}icon/e-learning_system_icon.png`,
+  analytics_growth_icon: `${imagePath}icon/analytics_growth_icon.png`,
+  globe_person_icon: `${imagePath}icon/globe_person_icon.png`,
+  handshake_icon: `${imagePath}icon/handshake_icon.png`,
+  online_examination_icon: `${imagePath}icon/online_examination_icon.png`,
   employment_meeting_icon: `${imagePath}icon/employment_meeting_icon.png`,
   handshake_agreement_icon: `${imagePath}icon/handshake_agreement_icon.png`,
   share_social_icon: `${imagePath}icon/share_social_icon.png`,
@@ -68,8 +72,6 @@ export const assetsObj = {
 
 
 
-
-
   hireTeamBannerImage: `${imagePath}images/hire-team-banner-img.png`,
   checkedIcon: `${imagePath}icon/checked-icon.svg`,
   avatar1: `${imagePath}images/avatar-1.png`,
@@ -95,4 +97,13 @@ export const assetsObj = {
   talentImg4: `${imagePath}images/talent-img-4.png`,
   talentImg5: `${imagePath}images/talent-img-5.png`,
   talentImg6: `${imagePath}images/talent-img-6.png`,
+  choiceShape1: `${imagePath}images/choice-shape-1.png`,
+  choiceShape2: `${imagePath}images/choice-shape-2.png`,
+  choiceShape3: `${imagePath}images/choice-shape-3.png`,
+  choiceShape4: `${imagePath}images/choice-shape-4.png`,
+  choiceMidImg: `${imagePath}images/choice-mid-img.png`,
+  
+
+  loginBG : `${imagePath}images/login-bg.png`,
+  developerBG : `${imagePath}images/developer-signup-BG.png`,
 };

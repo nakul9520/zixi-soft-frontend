@@ -6,7 +6,7 @@
 }
 
 .hire_team_banner .banner_image {
-  width: 100%;
+  width: 80%;
   position: absolute;
   bottom: -20px;
   left: 0;
@@ -113,23 +113,77 @@
 /* Hiring MOdel End */
 
 /* Choose Section Start */
-.choose_section {
+.zixiSoft_right_choice_section {
   background: #ff65021a;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+}
+.zixiSoft_right_choice_section .choice_card {
+  background-repeat: no-repeat !important;
+  background-position: left !important;
+  background-size: 100% 100% !important;
+  width: 100%;
+  padding: 10px;
+}
+.first_choice_card {
+  background-image: url("../../public/assets/images/choice-shape-1.png");
+}
+.second_choice_card {
+  background-image: url("../../public/assets/images/choice-shape-2.png");
+}
+.third_choice_card {
+  background-image: url("../../public/assets/images/choice-shape-3.png");
+}
+.fourth_choice_card {
+  background-image: url("../../public/assets/images/choice-shape-4.png");
 }
 
-.choose_section .first_card {
-  clip-path: polygon(
-    50% 0%,
-    100% 0,
-    100% 35%,
-    81% 50%,
-    72% 71%,
-    70% 100%,
-    0 100%,
-    0% 70%,
-    0% 35%,
-    0 0
-  );
+.choice_card_content_wrap {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 3;
+  width: 85%;
+}
+.choice_card_desc {
+  width: 90%;
+}
+.choice_card_content_wrap .choice_card_points {
+  background: linear-gradient(180deg, #019fe7 0%, #018dcf 100%);
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.choice_card_desc p {
+  margin-bottom: 0;
+}
+
+.zixiSoft_right_choice_card_wrap {
+  position: relative;
+}
+.zixi_choice_img {
+  width: 170px;
+  height: 170px;
+  border: 1px solid #019fe757;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.zixi_choice_img img {
+  padding: 20px;
+}
+.first_choice_card,
+.second_choice_card {
+  margin-bottom: 4rem;
 }
 /* Choose Section End */
 
@@ -339,10 +393,11 @@
   border: 1px solid #f8981d;
   border-radius: 30px;
   width: 70%;
+  margin-bottom: 70px;
 }
-.talent_need_section .talent_card:not(:last-child) {
+/* .talent_need_section .talent_card:not(:last-child) {
   margin-bottom: 6rem;
-}
+} */
 
 .talent_need_section .talent_card .avatar_wrapper {
   width: 120px;
@@ -361,33 +416,75 @@
 .talent_need_section .talent_card:nth-child(odd):not(:last-child)::before {
   content: "";
   display: block;
-  width: 180px;
-  height: 180px;
-  margin-bottom: 10px;
-  background-image: url("../assets/arrow-frame-right.png"); /* Image URL */
-  background-size: contain; /* Cover the entire area */
+  width: 168px;
+  height: 100%;
+  background-image: url(/src/assets/arrow-frame-right.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; /* Center the image */
+  background-position: center;
   position: absolute;
-  right: -19%;
-  top: 50%;
+  right: -158px;
+  top: 70px;
 }
-
+.talent_need_section .talent_card:nth-child(3):not(:last-child)::before {
+  width: 200px;
+  height: 240px;
+  right: -199px;
+  top: 225px;
+}
 /* For even cards, add an image after the card except the last one */
 .talent_need_section .talent_card:nth-child(even):not(:last-child)::after {
   content: "";
   display: block;
-  width: 150px; /* Set the width */
-  height: 150px; /* Set the height */
-  margin-bottom: 10px;
-  background-image: url("../assets/arrow-frame-left.png"); /* Image URL */
-  background-size: contain; /* Cover the entire area */
+  width: 168px;
+  height: 100%;
+  background-image: url(/src/assets/arrow-frame-left.png);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; /* Center the image */
+  background-position: center;
   position: absolute;
-  left: -5%;
+  left: -164px;
+  top: 70px;
+}
+
+.talent_card_list {
+  list-style: disc;
+}
+.talent_card_list li {
+  color: #8f8f8f;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 /* Talent Need End */
+
+/* Login Start */
+.login_section {
+  padding: 4rem 0;
+  height: 100vh;
+}
+.login_section .logo_img {
+  max-width: 200px;
+}
+.login_section .small_text {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+/* Login End */
+
+/* Developer Signup Start */
+.developer_signup_section {
+  height: 100vh;
+}
+.developer_signup_section .right_block {
+  background: #1f3083;
+  padding: 50px 20px;
+  border-radius: 30px 0 0 30px;
+}
+.developer_signup_section .logo_img {
+  max-width: 180px;
+}
+/* Developer Signup End */
 @media only screen and (max-width: 1400px) {
   .hire_team_banner .banner_image {
     width: 100%;
@@ -402,11 +499,66 @@
   .hire_team_banner .banner_image {
     position: unset;
   }
+  .talent_need_section .main_block .talent_card::before,
+  .talent_need_section .main_block .talent_card::after {
+    display: none !important;
+  }
+  .talent_need_section .talent_card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .zixi_choice_img {
+    display: none;
+  }
+  .choice_card {
+    margin-bottom: 2rem;
+  }
+  .first_choice_card,
+  .second_choice_card,
+  .third_choice_card,
+  .fourth_choice_card {
+    background-image: none;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #018dcf;
+    border-radius: 20px;
+  }
+  .choice_card_content_wrap{
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 992px) {
+/* For Ipad-Pro devices 1024x1366 Media Query:- */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .talent_need_section .talent_card {
+    width: 75%;
+  }
+  .talent_need_sectiontalent_need_section
+    .talent_card:nth-child(odd):not(:last-child)::before {
+    width: 150px;
+    height: 100%;
+    right: -152px;
+    top: 70px;
+  }
+  .talent_need_section .talent_card:nth-child(3):not(:last-child)::before {
+    width: 166px;
+    height: 240px;
+    right: -168px;
+    top: 271px;
+  }
+  .first_choice_card,
+  .second_choice_card {
+    margin-bottom: 2rem;
+  }
+  .zixi_choice_img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .hire_team_banner {
-    padding: 50px 0;
+    padding: 80px 0;
   }
   .hire_team_banner .banner_image {
     width: 80%;

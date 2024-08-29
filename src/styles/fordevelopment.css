@@ -8,6 +8,12 @@
   background-size: cover;
   height: 100vh;
 }
+.hero_section {
+  /* max-height: 100vh; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
 
 .for_dev_banner_content h2,
 .for_dev_banner_content p {
@@ -46,6 +52,21 @@
 .apply_for_job_section {
   background-color: #11cd7e0f;
 }
+.apply_job_icon_design {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 7px solid transparent;
+}
+.apply_job_process_card_content{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 350px;
+}
+
 /* matching process css */
 .matching_process_section {
   background-color: #fef6ef;
@@ -107,13 +128,15 @@
   background-color: #fef6ef;
 }
 .hire_faq_card {
-  width: 300px;
-  height: 340px;
-  position: absolute;
-  left: -17%;
-  top: 7%;
-  /* bottom: 0; */
+  width: 270px;
+  max-height: 100%;
+  padding: 20px;
+  position: relative;
+  right: 90px;
+  top: 30px;
   margin: auto;
+  z-index: 5;
+  margin-bottom: 20px;
 }
 .faq_accordian .accordion-item {
   border: 0;
@@ -125,4 +148,16 @@
 }
 .faq_accordian .accordion-header {
   border-radius: 7px;
+}
+
+/* apply now mini banner */
+.apply_now_banner {
+  padding: 4rem 0;
+}
+.apply_now_banner .content_wrapper {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  overflow: hidden;
 }

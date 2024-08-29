@@ -17,31 +17,37 @@ const JoinUsSection = () => {
             </p>
           </div>
           <Row className="d-flex align-items-center justify-content-center">
-            <Col xs={6}>
+            <Col xs={12} sm={6}>
               <div className="opportunities_points_wrap">
                 <div className="opportunities_point">
-                  <span>01</span>
+                  <div className="opportunities_point_number">
+                    <span>01</span>
+                  </div>
                   <p className="body1">
                     Create your profile and detail your qualifications and
                     skills.
                   </p>
                 </div>{" "}
                 <div className="opportunities_point">
-                  <span>02</span>
+                  <div className="opportunities_point_number">
+                    <span>02</span>
+                  </div>
                   <p className="body1">
                     Increase your visibility to recruiters and receive multiple
                     job offers.
                   </p>
                 </div>
                 <div className="opportunities_point">
-                  <span>03</span>
+                  <div className="opportunities_point_number">
+                    <span>03</span>
+                  </div>
                   <p className="body1">
                     Start your dream position and achieve career growth.
                   </p>
                 </div>
               </div>
             </Col>
-            <Col xs={6}>
+            <Col xs={12} sm={6}>
               <div className="joinus_right position-relative">
                 <div className="joinus_img_wrap position-relative z-2">
                   <img
