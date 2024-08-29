@@ -52,6 +52,21 @@
 .apply_for_job_section {
   background-color: #11cd7e0f;
 }
+.apply_job_icon_design {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 7px solid transparent;
+}
+.apply_job_process_card_content{
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 350px;
+}
+
 /* matching process css */
 .matching_process_section {
   background-color: #fef6ef;

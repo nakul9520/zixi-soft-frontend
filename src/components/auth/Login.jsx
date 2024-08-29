@@ -5,29 +5,33 @@ import { Col, Container, Row, Stack } from "react-bootstrap";
 import "../../styles/hireteam.css";
 import CMButton from "../common/CMButton";
 import Iconify from "../common/iconify";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="login_section">
-        <Container fluid>
-          <Row>
-            <Col md={6}>
-              <div>
+        <Container fluid className="h-100">
+          <Row className="h-100">
+            <Col md={6} className="h-100">
+              <div className="h-100">
                 <img
                   src={assetsObj.loginBG}
                   alt="Login image"
-                  className="img-fluid rounded-5"
+                  className="img-fluid rounded-5 h-100 w-100 object-fit-cover"
                 />
               </div>
             </Col>
             <Col md={6}>
               <div className="d-flex align-items-center justify-content-center flex-column h-100 px-4">
-                <img
-                  src={assetsObj.logo}
-                  alt="logo"
-                  className="mb-5 logo_img"
-                />
+                <div className="" onClick={() => navigate("/")}>
+                  <img
+                    src={assetsObj.logo}
+                    alt="logo"
+                    className="mb-5 logo_img"
+                  />
+                </div>
                 <h4 className="mb-5">Login to your employer account</h4>
                 <label class="pure-material-textfield-outlined mb-3">
                   <input placeholder=" " type="email" />

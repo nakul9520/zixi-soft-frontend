@@ -50,6 +50,12 @@
     width: 60px;
     height: 45px;
   }
+  .header_section {
+    background: #fff;
+  }
+  .header_section .navbar-nav {
+    align-items: center;
+  }
 }
 
 /* For Mobile devices and tablet both Media Query:- */
@@ -85,7 +91,7 @@
   .about_wrap {
     width: 100%;
   }
-  .footer_mid_divider .vr {
+  .footer_mid_divider.vr {
     display: none;
   }
 
@@ -106,6 +112,12 @@
   }
   .apply_now_banner {
     padding: 2rem 0;
+  }
+
+  .expert_hire_purple_layer,
+  .expert_hire_blue_layer,
+  .expert_hire_yellow_layer {
+    display: none;
   }
 }
 /* For Mobile devices Media Query:- */
@@ -145,11 +157,6 @@
     right: -5%;
     bottom: 7%;
     width: 70px;
-  }
-  .expert_hire_purple_layer,
-  .expert_hire_blue_layer,
-  .expert_hire_yellow_layer {
-    display: none;
   }
   .teams_member_card_2,
   .teams_member_card_1 {

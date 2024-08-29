@@ -31,10 +31,10 @@ const Header = () => {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="ms-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              // style={{ maxHeight: "100px" }}
             >
               {map(navLinks, (item, i) => (
-                <Nav.Link href="#action1" className="body1" key={i}>
+                <Nav.Link href={item.path} className="body1" key={i}>
                   {item.label}
                 </Nav.Link>
               ))}

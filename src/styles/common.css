@@ -605,3 +605,30 @@ input[type="number"] {
     }
   }
 }
+
+
+.skyblue_black_shade {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #00cac5 38.07%, #006462 115.75%) border-box;
+}
+.orange_black_shade {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #e87613 38.07%, #82420b 115.75%) border-box;
+}
+.yellow_black_shade {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #fcb819 38.07%, #835e08 115.75%) border-box;
+}
+.blue_black_shade {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #a619fc 38.07%, #630f96 115.75%) border-box;
+}
+.darkBlue_black_shade {
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(180deg, #7366a5 38.07%, #2c273f 115.75%) border-box;
+}

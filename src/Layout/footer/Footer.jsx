@@ -60,9 +60,7 @@ const Footer = () => {
                       ))}
                     </Stack>
                   </div>
-                  <div className="footer_mid_divider">
-                    <div className="vr" />
-                  </div>
+                  <div className="vr footer_mid_divider" />
                   <div className="about_wrap border-bottom pt-5">
                     <h5 className="ps-lg-4">About</h5>
                     <p className="ps-lg-4">
