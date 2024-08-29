@@ -59,22 +59,25 @@ const HiringModels = () => {
   return (
     <>
       <section className="hiring_model_section">
-        <Container fluid="md">
+        <Container fluid="lg">
           <Stack
             direction="horizontal"
             gap={3}
-            className="align-items-center justify-content-between mb-5"
+            className="align-items-center justify-content-between mb-5 flex-wrap"
           >
             <h3>Get the Best Talent with Our Hiring Models</h3>
-            <CMButton className="rounded-5" endicon={<i className="bi bi-arrow-right"></i>}>
+            <CMButton
+              className="rounded-5"
+              endicon={<i class="bi bi-arrow-right"></i>}
+            >
               Hire Developer
             </CMButton>
           </Stack>
           <Row>
             {map(hiringModelContent, (item, i) => (
-              <Col md={6} key={i}>
+              <Col sm={6} key={i}>
                 <Card
-                  className="model_card mb-5"
+                  className="model_card mb-4 mb-sm-5"
                   style={{ background: item.background_color }}
                 >
                   <Card.Body className="px-4">

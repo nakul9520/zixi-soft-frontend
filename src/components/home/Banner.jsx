@@ -27,7 +27,7 @@ const Banner = () => {
                 <div className="banner_btn">
                   <PrimaryButton
                     btnLabel="hire now"
-                    endIcon={<i className="bi bi-arrow-right"></i>}
+                    endIcon={<i class="bi bi-arrow-right"></i>}
                   />
                 </div>
               </div>

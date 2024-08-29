@@ -1,3 +1,5 @@
+import DeveloperSignup from "@/components/auth/DeveloperSignup";
+import Login from "@/components/auth/Login";
 import HomeLayout from "@/Layout/HomeLayout";
 import ForDeveloper from "@/pages/ForDeveloper";
 import HireYourTeam from "@/pages/HireYourTeam";
@@ -15,6 +17,8 @@ const AppRoutes = () => {
         { path: "/for-developer", element: <ForDeveloper /> },
       ],
     },
+    { path: "/login", element: <Login /> },
+    { path: "/developer-register", element: <DeveloperSignup /> },
   ]);
 
   return (

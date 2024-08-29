@@ -115,7 +115,7 @@ const Footer = () => {
                   <Stack direction="horizontal" className="flex-wrap" gap={3}>
                     <div>
                       <span className="me-3">
-                        <i className="bi bi-geo-alt-fill"></i>
+                        <i class="bi bi-geo-alt-fill"></i>
                       </span>
                       <span>
                         It is a long established fact that a reader will be
@@ -125,14 +125,14 @@ const Footer = () => {
                     <div className="vr" />
                     <div>
                       <span className="me-3">
-                        <i className="bi bi-envelope-fill"></i>
+                        <i class="bi bi-envelope-fill"></i>
                       </span>
                       <span>contact@zixisoft.com</span>
                     </div>
                     <div className="vr" />
                     <div>
                       <span className="me-3">
-                        <i className="bi bi-telephone-fill"></i>
+                        <i class="bi bi-telephone-fill"></i>
                       </span>
                       <span>+91 0987654321</span>
                     </div>

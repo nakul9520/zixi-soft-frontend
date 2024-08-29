@@ -9,7 +9,7 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Navbar expand="lg" className="fixed-top header_section">
+      <Navbar fixed="top" expand="lg" className="header_section">
         <Container fluid className="gap-3">
           <Navbar.Brand href="#">
             <div className="logo_wrapper">

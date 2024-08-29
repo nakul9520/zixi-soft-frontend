@@ -68,8 +68,6 @@ export const assetsObj = {
 
 
 
-
-
   hireTeamBannerImage: `${imagePath}images/hire-team-banner-img.png`,
   checkedIcon: `${imagePath}icon/checked-icon.svg`,
   avatar1: `${imagePath}images/avatar-1.png`,
@@ -95,4 +93,8 @@ export const assetsObj = {
   talentImg4: `${imagePath}images/talent-img-4.png`,
   talentImg5: `${imagePath}images/talent-img-5.png`,
   talentImg6: `${imagePath}images/talent-img-6.png`,
+  
+
+  loginBG : `${imagePath}images/login-bg.png`,
+  developerBG : `${imagePath}images/developer-signup-BG.png`,
 };
