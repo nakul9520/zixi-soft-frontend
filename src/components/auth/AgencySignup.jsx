@@ -4,8 +4,10 @@ import { Form, Col, Container, Row, Stack } from "react-bootstrap";
 
 import "../../styles/hireteam.css";
 import CMButton from "../common/CMButton";
+import { useNavigate } from "react-router-dom";
 
 const AgencySignup = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section className="developer_signup_section">
@@ -16,7 +18,8 @@ const AgencySignup = () => {
                 <img
                   src={assetsObj.logo}
                   alt="logo"
-                  className="mb-5 logo_img"
+                  className="mb-5 logo_img cursor-pointer"
+                  onClick={() => navigate("/")}
                 />
                 <Row>
                   <Col sm={12}>
@@ -74,25 +77,29 @@ const AgencySignup = () => {
                   </Col>
                 </Row>
 
+                <h6 className="text_dark_light my-5 text-center fw-medium">
+                  Already have an account? {""}
+                  <strong
+                    className="text-decoration-underline secondary_font"
+                    style={{ fontWeight: 800 }}
+                  >
+                    Login
+                  </strong>
+                </h6>
                 <p className="body2 text_dark_light my-5 text-center">
-                  Already have an account?
-                  <a href="#">
-                    <strong>Login</strong>
-                  </a>
-                </p>
-                <p className="body2 text_dark_light my-5 text-center">
-                  By Completing the Sign up form, you’re agreeing to ZIXISOFT
-                  <a href="#">
-                    <strong>Terms & Condition</strong>
-                  </a>
+                  By Completing the Sign up form, you’re agreeing to ZIXISOFT{" "}
+                  {""}
+                  <strong className="text-decoration-underline secondary_font text_primary">
+                    Terms & Conditionṅ
+                  </strong>
                 </p>
               </div>
             </Col>
             <Col md={6} className="pe-0">
               <div className="right_block pe-0 h-100 ">
                 <div className="pe-1">
-                  <h3 className="main_heading text-white">
-                    Welcome to <span>Z</span> <span>IXISOFT</span>{" "}
+                  <h3 className="main_heading text-white mb-4">
+                    Welcome to <span className="text_primary">Z</span><span>IXISOFT</span>{" "}
                   </h3>
                   <p className="text-light body1 fw-normal mb-3">
                     Post a job and find your next hire.
@@ -102,7 +109,7 @@ const AgencySignup = () => {
                   <img
                     src={assetsObj.agencySignupImg}
                     alt="Login image"
-                    className="img-fluid"
+                    className="w-100"
                   />
                 </div>
               </div>
