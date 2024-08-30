@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = React.useState(false);
   return (
     <>
       <section className="login_section">
@@ -29,7 +30,7 @@ const Login = () => {
                   <img
                     src={assetsObj.logo}
                     alt="logo"
-                    className="mb-5 logo_img"
+                    className="mb-5 logo_img cursor-pointer"
                   />
                 </div>
                 <h4 className="mb-5">Login to your employer account</h4>
@@ -38,10 +39,18 @@ const Login = () => {
                   <span>Email</span>
                 </label>
                 <label class="pure-material-textfield-outlined icon-textfield end-icon">
-                  <input placeholder=" " type="password" />
+                  <input
+                    placeholder=" "
+                    type={showPassword ? "text" : "password"}
+                  />
                   <span>Password</span>
                   <div className="icon-wrapper ">
-                    <Iconify icon="heroicons-solid:eye-off" />
+                    <Iconify
+                      onClick={() => setShowPassword(!showPassword)}
+                      icon={
+                        showPassword ? "ion:eye" : "heroicons-solid:eye-off"
+                      }
+                    />
                   </div>
                 </label>
 

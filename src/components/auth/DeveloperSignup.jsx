@@ -4,8 +4,14 @@ import { Form, Col, Container, Row, Stack } from "react-bootstrap";
 
 import "../../styles/hireteam.css";
 import CMButton from "../common/CMButton";
+import { useNavigate } from "react-router-dom";
+import Iconify from "../common/iconify";
 
 const DeveloperSignup = () => {
+  const navigate = useNavigate();
+
+  const [showPassword, setShowPassword] = React.useState(false);
+
   return (
     <>
       <section className="developer_signup_section">
@@ -16,7 +22,8 @@ const DeveloperSignup = () => {
                 <img
                   src={assetsObj.logo}
                   alt="logo"
-                  className="mb-5 logo_img"
+                  className="mb-5 logo_img cursor-pointer"
+                  onClick={() => navigate("/")}
                 />
                 <Row>
                   <Col sm={6}>
@@ -32,15 +39,27 @@ const DeveloperSignup = () => {
                     </label>
                   </Col>
                   <Col sm={6}>
-                    <label class="pure-material-textfield-outlined mb-3">
-                      <input placeholder=" " type="password" />
+                    <label class="pure-material-textfield-outlined icon-textfield end-icon mb-3">
+                      <input
+                        placeholder=" "
+                        type={showPassword ? "text" : "password"}
+                      />
                       <span>Password</span>
+                      <div className="icon-wrapper ">
+                        <Iconify
+                          onClick={() => setShowPassword(!showPassword)}
+                          icon={
+                            showPassword ? "ion:eye" : "heroicons-solid:eye-off"
+                          }
+                        />
+                      </div>
                     </label>
                   </Col>
                   <Col sm={6}>
-                    <label class="pure-material-textfield-outlined mb-3">
+                    <label class="pure-material-textfield-outlined start-icon mb-3">
                       <input placeholder=" " />
                       <span>Phone Number</span>
+                      <div className="icon-wrapper">+91</div>
                     </label>
                   </Col>
                   <Col sm={6}>
@@ -88,10 +107,37 @@ const DeveloperSignup = () => {
                     </label>
                   </Col>
                   <Col xs={12}>
-                    <label class="pure-material-textfield-outlined mb-3">
-                      <input class="" type="file" />
-                      <span></span>
-                    </label>
+                    <div className="file_uploader">
+                      <label
+                        class="pure-material-textfield-outlined  mb-3"
+                        htmlFor="file-input"
+                      >
+                        <div className="virtual_input">
+                          <div className="d-flex align-items-center gap-3">
+                            <Iconify icon="bi:upload" />
+                            <p className="body1 mb-0 text_label">
+                              Upload Resume
+                            </p>
+                          </div>
+                          <p className="body1 fw-normal mb-0 info_label">
+                            PDF, DOCX | MAX: 2 MB
+                          </p>
+                        </div>
+                        <input id={`file-input`} accept="image/*" type="file" />
+                        <span style={{ fontSize: "16px" }}>
+                          Upload Resume{" "}
+                          <span
+                            style={{
+                              fontSize: "10px",
+                              lineHeight: 1.8,
+                              marginLeft: "5px",
+                            }}
+                          >
+                            (You can edit your profile later)
+                          </span>
+                        </span>
+                      </label>
+                    </div>
                   </Col>
                   <Col sm={6}>
                     <h6 className="text_dark_light mb-3">Job Preference</h6>
