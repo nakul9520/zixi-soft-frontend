@@ -5,15 +5,15 @@ import { Col, Container, Row } from "react-bootstrap";
 const ApplyForJob = () => {
   return (
     <>
-      <section className="apply_for_job_section pt-4 pb-5">
+      <section className="apply_for_job_section pt-4 pb-2">
         <Container>
           <div className="common_heading text-center">
             <h3>How to Apply for Amazing Dream Jobs?</h3>
           </div>
           <Row>
             <Col xs={12}>
-              <div className="apply_job_process_cards_wrap d-flex flex-wrap">
-                <div className="apply_job_process_card">
+              <div className="apply_job_process_cards_wrap position-relative">
+                <div className="apply_job_process_card apply_job_process_card1">
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">01</h5>
                     <div>
@@ -32,8 +32,15 @@ const ApplyForJob = () => {
                     />
                   </div>
                 </div>
-                <div className="apply_job_process_card">
-                  <div className="apply_job_process_card_content">
+                <div className="apply_job_process_card apply_job_process_card2">
+                  <div className="orange_black_shade apply_job_icon_design">
+                    <img
+                      src={assetsObj.globe_person_icon}
+                      alt="img-fluid"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="apply_job_process_card_content mt-3">
                     <h5 className="fw-bold">02</h5>
                     <div>
                       <h6>Find matching opportunities</h6>
@@ -43,15 +50,8 @@ const ApplyForJob = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="orange_black_shade apply_job_icon_design">
-                    <img
-                      src={assetsObj.globe_person_icon}
-                      alt="img-fluid"
-                      className="img-fluid"
-                    />
-                  </div>
                 </div>
-                <div className="apply_job_process_card">
+                <div className="apply_job_process_card apply_job_process_card3">
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">03</h5>
                     <div>
@@ -70,8 +70,15 @@ const ApplyForJob = () => {
                     />
                   </div>
                 </div>{" "}
-                <div className="apply_job_process_card">
-                  <div className="apply_job_process_card_content">
+                <div className="apply_job_process_card apply_job_process_card4">
+                  <div className="blue_black_shade apply_job_icon_design">
+                    <img
+                      src={assetsObj.handshake_icon}
+                      alt="img-fluid"
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="apply_job_process_card_content mt-3">
                     <h5 className="fw-bold">04</h5>
                     <div>
                       <h6>Matchmaking with Opportunities</h6>
@@ -81,15 +88,8 @@ const ApplyForJob = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="blue_black_shade apply_job_icon_design">
-                    <img
-                      src={assetsObj.handshake_icon}
-                      alt="img-fluid"
-                      className="img-fluid"
-                    />
-                  </div>
                 </div>{" "}
-                <div className="apply_job_process_card">
+                <div className="apply_job_process_card apply_job_process_card5">
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">05</h5>
                     <div>

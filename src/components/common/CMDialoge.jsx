@@ -20,6 +20,9 @@ const CMDialoge = (props) => {
             <Modal.Title>{dialogeTitle}</Modal.Title>
           </Modal.Header>
         )}
+        <span className="model_icon" onClick={handleClose}>
+          <i class="bi bi-x-circle"></i>
+        </span>
         {dialogContent && <Modal.Body>{dialogContent}</Modal.Body>}
         {dialogAction && <Modal.Footer>{dialogAction}</Modal.Footer>}
         {children}

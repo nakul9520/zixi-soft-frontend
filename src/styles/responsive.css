@@ -119,6 +119,15 @@
   .expert_hire_yellow_layer {
     display: none;
   }
+  .shedule_call_model_card img {
+    width: 100%;
+  }
+  .shedule_call_model_card .hstack {
+    flex-direction: column;
+  }
+  .shedule_call_model_card_content{
+    display: block;
+  }
 }
 /* For Mobile devices Media Query:- */
 @media only screen and (max-width: 500px) {

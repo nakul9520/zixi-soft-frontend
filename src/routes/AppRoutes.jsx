@@ -1,3 +1,4 @@
+import AgencySignup from "@/components/auth/AgencySignup";
 import DeveloperSignup from "@/components/auth/DeveloperSignup";
 // import FloatingLabelInput from "@/components/auth/FloatingLabelInput";
 import Login from "@/components/auth/Login";
@@ -20,6 +21,7 @@ const AppRoutes = () => {
     },
     { path: "/login", element: <Login /> },
     { path: "/developer-register", element: <DeveloperSignup /> },
+    { path: "/agency-register", element: <AgencySignup /> },
     // { path: "/demo", element: <FloatingLabelInput /> },
   ]);
 
