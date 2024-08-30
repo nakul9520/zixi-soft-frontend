@@ -110,6 +110,11 @@ export const assetsObj = {
   choiceShape4: `${imagePath}images/choice-shape-4.png`,
   choiceMidImg: `${imagePath}images/choice-mid-img.png`,
   ratingFiveStar: `${imagePath}images/rating-five-star.png`,
+  // apply job
+  jobProcessVector1: `${imagePath}images/job-apply-process-vector-1.png`,
+  jobProcessVector2: `${imagePath}images/job-apply-process-vector-2.png`,
+  jobProcessVector3: `${imagePath}images/job-apply-process-vector-3.png`,
+  jobProcessVector4: `${imagePath}images/job-apply-process-vector-4.png`,
 
   loginBG: `${imagePath}images/login-bg.png`,
   developerBG: `${imagePath}images/developer-signup-BG.png`,

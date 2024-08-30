@@ -6,7 +6,7 @@ const ApplyForJob = () => {
   return (
     <>
       <section className="apply_for_job_section pt-4 pb-2">
-        <Container>
+        <Container fluid="md">
           <div className="common_heading text-center">
             <h3>How to Apply for Amazing Dream Jobs?</h3>
           </div>
@@ -27,18 +27,28 @@ const ApplyForJob = () => {
                   <div className="skyblue_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.learning_system_icon}
-                      alt="img-fluid"
+                      alt="learning_system_icon"
                       className="img-fluid"
                     />
+                    {/* <img
+                      src={assetsObj.jobProcessImg1}
+                      alt="jobProcessImg1"
+                      className="img-fluid"
+                    /> */}
                   </div>
                 </div>
                 <div className="apply_job_process_card apply_job_process_card2">
                   <div className="orange_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.globe_person_icon}
-                      alt="img-fluid"
+                      alt="globe_person_icon"
                       className="img-fluid"
                     />
+                    {/* <img
+                      src={assetsObj.jobProcessImg2}
+                      alt="jobProcessImg2"
+                      className="img-fluid"
+                    /> */}
                   </div>
                   <div className="apply_job_process_card_content mt-3">
                     <h5 className="fw-bold">02</h5>
@@ -65,18 +75,28 @@ const ApplyForJob = () => {
                   <div className="yellow_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.online_examination_icon}
-                      alt="img-fluid"
+                      alt="online_examination_icon"
                       className="img-fluid"
                     />
+                    {/* <img
+                    src={assetsObj.jobProcessImg3}
+                    alt="jobProcessImg2"
+                    className="img-fluid"
+                  /> */}
                   </div>
                 </div>{" "}
                 <div className="apply_job_process_card apply_job_process_card4">
                   <div className="blue_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.handshake_icon}
-                      alt="img-fluid"
+                      alt="handshake_icon"
                       className="img-fluid"
                     />
+                    {/* <img
+                    src={assetsObj.jobProcessImg4}
+                    alt="jobProcessImg4"
+                    className="img-fluid"
+                  /> */}
                   </div>
                   <div className="apply_job_process_card_content mt-3">
                     <h5 className="fw-bold">04</h5>
@@ -103,9 +123,14 @@ const ApplyForJob = () => {
                   <div className="darkBlue_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.analytics_growth_icon}
-                      alt="img-fluid"
+                      alt="analytics_growth_icon"
                       className="img-fluid"
                     />
+                    {/* <img
+                    src={assetsObj.jobProcessImg5}
+                    alt="jobProcessImg5"
+                    className="img-fluid"
+                  /> */}
                   </div>
                 </div>
               </div>
