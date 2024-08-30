@@ -16,6 +16,14 @@ const JobOnZixisoft = () => {
     { title: "Full-Stack", logo: assetsObj.pubmaticLogo },
   ];
   const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    rtl: true,
     responsive: {
       0: {
         items: 1,
@@ -39,9 +47,6 @@ const JobOnZixisoft = () => {
         items: 4,
       },
     },
-    nav: false,
-    dots: true,
-    autoplay: false,
   };
   return (
     <>
@@ -97,7 +102,7 @@ const JobOnZixisoft = () => {
                           </CMButton>{" "}
                           <CMButton
                             variant="soft"
-                            color="orange"
+                            color="primary"
                             className="rounded-2"
                           >
                             Pune

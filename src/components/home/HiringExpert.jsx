@@ -41,12 +41,12 @@ const HiringExpert = () => {
           <Row className="align-items-center justify-content-center">
             <Col xs={12}>
               <div className="text-center mb-5">
-                <h3>Expert Hiring for All Your Tech Needs</h3>
+                <h3>Strategic Hiring Solutions for Every Tech Need</h3>
                 <p className="subtitle1">
-                  Outsource your entire recruitment process to our experts. We
-                  ensure you hire the right software developers perfectly
-                  tailored to your business needs, saving you time and resources
-                  while securing top talent.
+                  Delegate your entire recruitment process to our experts. We
+                  guarantee the right talents, customized to fit your business
+                  needs, saving you time and resources while securing top
+                  talent.
                 </p>
               </div>
             </Col>

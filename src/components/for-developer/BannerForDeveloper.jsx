@@ -24,12 +24,10 @@ const BannerForDeveloper = () => {
                 <div className="for_dev_email_input">
                   <InputGroup className="mb-3">
                     <Form.Control
-                      placeholder="Recipient's username"
-                      aria-label="Recipient's username"
-                      aria-describedby="basic-addon2"
+                      placeholder="Enter your Email"
                     />
                     <CMButton variant="outline-secondary" className="rounded-1">
-                      Button
+                      Apply Today
                     </CMButton>
                   </InputGroup>
                 </div>

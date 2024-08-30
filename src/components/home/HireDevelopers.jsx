@@ -9,11 +9,10 @@ const HireDevelopers = () => {
         <Container>
           <Row>
             <Col xs={12}>
-              <div className="common_heading text-center">
-                <h3>Hire Developers From Us</h3>
+              <div className="common_heading">
+                <h3>Connect with the Right Talent Quickly and Easily</h3>
                 <p>
-                  If not satisfied, choose another resource that meets your
-                  needs.
+                If you’re not able to find the right talent, we’ll help you locate one that meets your needs.
                 </p>
               </div>
             </Col>
