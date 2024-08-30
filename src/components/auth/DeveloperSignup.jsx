@@ -87,7 +87,12 @@ const DeveloperSignup = () => {
                       <span>Current annual salary</span>
                     </label>
                   </Col>
-                  <Col xs={12}></Col>
+                  <Col xs={12}>
+                    <label class="pure-material-textfield-outlined mb-3">
+                      <input class="" type="file" />
+                      <span></span>
+                    </label>
+                  </Col>
                   <Col sm={6}>
                     <h6 className="text_dark_light mb-3">Job Preference</h6>
                     <div

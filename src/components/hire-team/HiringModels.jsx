@@ -1,6 +1,6 @@
 import { assetsObj } from "@/utils/Images";
 import { map } from "lodash";
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Card,
@@ -11,8 +11,12 @@ import {
   Stack,
 } from "react-bootstrap";
 import CMButton from "../common/CMButton";
+import LookingDeveloper from "./hire-team-modal/LookingDeveloper";
 
 const HiringModels = () => {
+  const [openLookingDeveloperModal, setOpenLookingDeveloperModal] =
+    useState(false);
+
   const hiringModelContent = [
     {
       title: "Hourly",
@@ -69,6 +73,7 @@ const HiringModels = () => {
             <CMButton
               className="rounded-5"
               endicon={<i class="bi bi-arrow-right"></i>}
+              onClick={() => setOpenLookingDeveloperModal(true)}
             >
               Hire Developer
             </CMButton>
@@ -118,6 +123,10 @@ const HiringModels = () => {
           </Row>
         </Container>
       </section>
+      <LookingDeveloper
+        open={openLookingDeveloperModal}
+        handleClose={() => setOpenLookingDeveloperModal(false)}
+      />
     </>
   );
 };

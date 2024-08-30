@@ -484,7 +484,6 @@
   color: #fff;
 }
 
-
 /* demooo */
 .floating-label-input {
   position: relative;
@@ -499,11 +498,11 @@
   transition: all 0.1s;
   color: gray;
   pointer-events: none;
-  background-color: #D7D7D7;
+  background-color: #d7d7d7;
   padding: 0 5px;
 }
-.form-control{
-  background-color: #D7D7D7;
+.form-control {
+  /* background-color: #d7d7d7; */
 }
 
 .floating-label-input .form-control:focus + .form-label,
@@ -514,6 +513,31 @@
   color: #000;
   background-color: #fff;
 }
-.form-control:focus{
+.form-control:focus {
   box-shadow: none;
+}
+
+/* Model css */
+.model_icon {
+  text-align: end;
+  padding: 10px 14px 0 0;
+}
+.model_icon i{
+  font-size: 26px;
+  cursor: pointer;
+}
+.brand_promotion_wrap {
+  border: 1px solid #fcb819;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: start;
+  margin-bottom: 14px;
+}
+.shedule_call_model_card img {
+  width: 25%;
+}
+.shedule_call_model_card_content {
+  display: flex;
+  width: 100%;
 }

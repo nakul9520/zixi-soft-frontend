@@ -59,6 +59,7 @@ export const assetsObj = {
   amazonLogo: `${imagePath}images/amazon.png`,
   dunzoLogo: `${imagePath}images/dunzo.png`,
   googleLogo: `${imagePath}images/google.png`,
+  googleMiniIcon: `${imagePath}images/google-mini-icon.png`,
   paytmLogo: `${imagePath}images/paytm.png`,
   spotifyLogo: `${imagePath}images/spotify.png`,
   techImage: `${imagePath}images/tech-img-1.png`,
@@ -69,8 +70,13 @@ export const assetsObj = {
   dayLayerActive: `${imagePath}images/day-layer-active.png`,
   dayLayerDeActive: `${imagePath}images/day-layer-de-active.png`,
   clipIcon1: `${imagePath}images/clip-icon1.png`,
-
-
+  bookConsultantClip: `${imagePath}images/book-consultant-clip.png`,
+  clutchLogo: `${imagePath}images/clutch.png`,
+  hundredPlusLogo: `${imagePath}images/100+.png`,
+  vectorLogo: `${imagePath}images/vector.png`,
+  scheduleCallModelImg1: `${imagePath}images/schedule-call-model-img-1.png`,
+  scheduleCallModelImg2: `${imagePath}images/schedule-call-model-img-2.png`,
+  scheduleCallModelImg3: `${imagePath}images/schedule-call-model-img-3.png`,
 
   hireTeamBannerImage: `${imagePath}images/hire-team-banner-img.png`,
   checkedIcon: `${imagePath}icon/checked-icon.svg`,
@@ -85,6 +91,7 @@ export const assetsObj = {
   hiringModelIcon3: `${imagePath}icon/hiring-model-3.png`,
   hiringModelIcon4: `${imagePath}icon/hiring-model-4.png`,
   developerBG: `${imagePath}images/developer_bg.png`,
+  agencySignupImg: `${imagePath}images/agency-signup-right-img.png`,
   scheduleCallBG: `${imagePath}images/schedule-call-bg.png`,
   scheduleCallImage: `${imagePath}images/schedule-call-image.png`,
   trailIcon: `${imagePath}icon/one-month-trail.svg`,
@@ -102,8 +109,8 @@ export const assetsObj = {
   choiceShape3: `${imagePath}images/choice-shape-3.png`,
   choiceShape4: `${imagePath}images/choice-shape-4.png`,
   choiceMidImg: `${imagePath}images/choice-mid-img.png`,
-  
+  ratingFiveStar: `${imagePath}images/rating-five-star.png`,
 
-  loginBG : `${imagePath}images/login-bg.png`,
-  developerBG : `${imagePath}images/developer-signup-BG.png`,
+  loginBG: `${imagePath}images/login-bg.png`,
+  developerBG: `${imagePath}images/developer-signup-BG.png`,
 };
