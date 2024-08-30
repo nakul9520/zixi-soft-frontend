@@ -10,7 +10,7 @@ const Techstack = () => {
     responsiveClass: true,
     nav: false,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 1000,
     rtl: true,
@@ -40,10 +40,10 @@ const Techstack = () => {
     responsiveClass: true,
     nav: false,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 3000,
     smartSpeed: 1000,
-    rtl: true,
+    rtl: false,
     responsive: {
       0: {
         items: 1,

@@ -14,6 +14,14 @@ const dreamCompanyLogoData = [
 ];
 const DeveloperDreamCompany = () => {
   const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    rtl: true,
     responsive: {
       0: {
         items: 1,
@@ -34,14 +42,11 @@ const DeveloperDreamCompany = () => {
         items: 6,
       },
     },
-    nav: false,
-    dots: true,
-    loop: false,
   };
   return (
     <>
       <section className="developer_dream_company_section py-5">
-        <Container>
+        <Container fluid>
           <div className="common_heading text-center mb-4">
             <h3>Your Dream Companies Are Ready to Work with You!</h3>
           </div>

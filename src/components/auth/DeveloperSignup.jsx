@@ -56,10 +56,10 @@ const DeveloperSignup = () => {
                     </label>
                   </Col>
                   <Col sm={6}>
-                    <label class="pure-material-textfield-outlined start-icon mb-3">
+                    <label class="pure-material-textfield-outlined  mb-3">
                       <input placeholder=" " />
                       <span>Phone Number</span>
-                      <div className="icon-wrapper">+91</div>
+                      {/* <div className="icon-wrapper">+91</div> */}
                     </label>
                   </Col>
                   <Col sm={6}>

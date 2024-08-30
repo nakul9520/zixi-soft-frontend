@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { assetsObj } from "@/utils/Images";
 import PrimaryButton from "../common/PrimaryButton";
+import CMButton from "../common/CMButton";
 
 const ClientServe = () => {
   return (
@@ -27,7 +28,9 @@ const ClientServe = () => {
                   <li>Prototypes / Proof of concept</li>
                 </ul>
                 <div className="client_points_btn">
-                  <PrimaryButton btnLabel="Scope your project" />
+                  <CMButton variant="outlined" className="rounded-5">
+                    Scope your project
+                  </CMButton>
                 </div>
               </div>
             </Col>
@@ -88,7 +91,9 @@ const ClientServe = () => {
                   <li>No in-house hiring infrastructure</li>
                 </ul>
                 <div className="client_points_btn">
-                  <PrimaryButton btnLabel="Hire teams" />
+                  <CMButton variant="outlined" className="rounded-5">
+                    Hire teams
+                  </CMButton>
                 </div>
               </div>
             </Col>
@@ -105,7 +110,9 @@ const ClientServe = () => {
                   <li>Need to scale quickly</li>
                 </ul>
                 <div className="client_points_btn">
-                  <PrimaryButton btnLabel="Hire resources" />
+                  <CMButton variant="outlined" className="rounded-5">
+                    Hire resources
+                  </CMButton>
                 </div>
               </div>
             </Col>

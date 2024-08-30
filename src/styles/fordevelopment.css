@@ -53,6 +53,7 @@
   background-color: #11cd7e0f;
 }
 .apply_job_icon_design {
+  position: relative;
   width: 100px;
   height: 100px;
   padding: 20px;
@@ -67,7 +68,7 @@
   width: 300px;
 }
 .apply_job_process_cards_wrap {
-  height: 600px;
+  height: 700px;
 }
 .apply_job_process_card {
   position: absolute;
@@ -79,21 +80,65 @@
 }
 .apply_job_process_card2 {
   bottom: 0;
-  left: 15%;
+  left: 200px;
 }
 .apply_job_process_card3 {
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  top: 28%;
+  left: 45%;
+  transform: translate(-50%, -50%);
   margin: auto;
 }
 .apply_job_process_card4 {
-  bottom: 5%;
-  right: 15%;
+  bottom: 70px;
+  right: 365px;
 }
 .apply_job_process_card5 {
-  top: 0;
-  right: 0;
+  top: 14px;
+  right: 164px;
+}
+
+.apply_job_icon_design::after {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 92px;
+  top: 40%;
+  bottom: 0;
+}
+.apply_job_process_card1 .apply_job_icon_design::after {
+  width: 160px;
+  height: 145px;
+  background-image: url(/public/assets/images/job-apply-process-vector-1.png);
+  left: 92px;
+  top: 40%;
+  bottom: 0;
+}
+.apply_job_process_card2 .apply_job_icon_design::after {
+  width: 210px;
+  height: 199px;
+  background-image: url(/public/assets/images/job-apply-process-vector-2.png);
+  left: 83px;
+  top: -150px;
+  bottom: 0;
+}
+.apply_job_process_card3 .apply_job_icon_design::after {
+  width: 150px;
+  height: 130px;
+  background-image: url(/public/assets/images/job-apply-process-vector-3.png);
+  left: 95px;
+  top: 35px;
+  bottom: 0;
+}
+.apply_job_process_card4 .apply_job_icon_design::after {
+  width: 210px;
+  height: 199px;
+  background-image: url(/public/assets/images/job-apply-process-vector-4.png);
+  left: 66px;
+  top: -150px;
+  bottom: 0;
 }
 
 /* matching process css */
@@ -189,4 +234,60 @@
   background-repeat: no-repeat;
   border-radius: 40px;
   overflow: hidden;
+}
+
+/* responsive css */
+
+/* For Small Desktop Screen Resolution 1366x768 Media:- */
+@media only screen and (max-width: 1400px) {
+  .apply_job_process_card5 {
+    right: 0;
+  }
+  .apply_job_process_card4 {
+    right: 197px;
+  }
+  .apply_job_process_card3 {
+    left: 52%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .apply_job_icon_design::after {
+    display: none;
+  }
+  .apply_job_process_card {
+    position: unset;
+  }
+  .apply_job_process_cards_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+  }
+  
+  .apply_job_process_card3,
+  .apply_job_process_card1,
+  .apply_job_process_card5 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    transform: none;
+    margin: unset;
+  }
+  .apply_job_process_card_content{
+    margin-top: 1rem;
+  }
+  /* .apply_job_process_card5 {
+    right: 0;
+  }
+  .apply_job_process_card4 {
+    right: 197px;
+  }
+  .apply_job_process_card3 {
+    left: 52%;
+  } */
+}
+@media only screen and (max-width: 600px) {
+  .apply_job_process_card_content{
+    width: 100%;
+  }
 }

@@ -5,8 +5,10 @@ import { Form, Col, Container, Row, Stack } from "react-bootstrap";
 import "../../styles/hireteam.css";
 import CMButton from "../common/CMButton";
 import { useNavigate } from "react-router-dom";
+import Iconify from "../common/iconify/Iconify";
 
 const AgencySignup = () => {
+  const [showPassword, setShowPassword] = React.useState(false);
   const navigate = useNavigate();
   return (
     <>
@@ -21,7 +23,7 @@ const AgencySignup = () => {
                   className="mb-5 logo_img cursor-pointer"
                   onClick={() => navigate("/")}
                 />
-                <Row>
+                <Row className="px-lg-5">
                   <Col sm={12}>
                     <label class="pure-material-textfield-outlined mb-3">
                       <input placeholder=" " />
@@ -59,9 +61,17 @@ const AgencySignup = () => {
                     </label>
                   </Col>
                   <Col sm={6}>
-                    <label class="pure-material-textfield-outlined mb-3">
+                    <label class="pure-material-textfield-outlined mb-3 icon-textfield end-icon">
                       <input placeholder=" " type="password" />
                       <span>Password</span>
+                      <div className="icon-wrapper ">
+                        <Iconify
+                          onClick={() => setShowPassword(!showPassword)}
+                          icon={
+                            showPassword ? "ion:eye" : "heroicons-solid:eye-off"
+                          }
+                        />
+                      </div>
                     </label>
                   </Col>{" "}
                   <Col sm={6}>
@@ -71,7 +81,11 @@ const AgencySignup = () => {
                     </label>
                   </Col>
                   <Col xs={12} className="text-center mt-4">
-                    <CMButton variant="contained" color="primary">
+                    <CMButton
+                      variant="contained"
+                      color="primary"
+                      className="w-100"
+                    >
                       Create Employer Account
                     </CMButton>
                   </Col>
@@ -99,7 +113,8 @@ const AgencySignup = () => {
               <div className="right_block pe-0 h-100 ">
                 <div className="pe-1">
                   <h3 className="main_heading text-white mb-4">
-                    Welcome to <span className="text_primary">Z</span><span>IXISOFT</span>{" "}
+                    Welcome to <span className="text_primary">Z</span>
+                    <span>IXISOFT</span>{" "}
                   </h3>
                   <p className="text-light body1 fw-normal mb-3">
                     Post a job and find your next hire.
