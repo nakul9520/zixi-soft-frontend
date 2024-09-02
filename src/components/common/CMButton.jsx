@@ -34,31 +34,37 @@ const StyledButton = styled(Button)`
 
   ${(props) =>
     props.variant === "contained" &&
-    props.color !== "default" &&
     `
     background-color: ${palette[props.color].main};
     color: ${palette[props.color].contrastText};
-    border: none;
+    border: 1px solid;
+    border-color: transparent;
+    transition: .3s all ease-in-out;
     &:hover {
-      background-color: ${palette[props.color].dark};
+      border: 1px solid ${palette[props.color].main};
+      color: ${palette[props.color].main};
+      background: transparent;
+      transition: .3s all ease-in-out;
     }
   `}
 
   ${(props) =>
     props.variant === "outlined" &&
-    props.color !== "default" &&
     `
     background-color: transparent;
     color: ${palette[props.color].main};
     border: 1px solid ${palette[props.color].main};
+    transition: .3s all ease-in-out;
     &:hover {
-      background-color: ${palette[props.color].lighter};
+      border: 1px solid ${palette[props.color].main};
+      color: ${palette[props.color].contrastText};
+      background: ${palette[props.color].main};
+      transition: .3s all ease-in-out;
     }
   `}
 
   ${(props) =>
     props.variant === "soft" &&
-    props.color !== "default" &&
     `
     background-color: ${palette[props.color].lighter};
     color: ${palette[props.color].main};
@@ -70,7 +76,6 @@ const StyledButton = styled(Button)`
 
   ${(props) =>
     props.variant === "ghost" &&
-    props.color !== "default" &&
     `
     background-color: ${palette[props.color].lighter};
     color: ${palette[props.color].main};
@@ -82,13 +87,17 @@ const StyledButton = styled(Button)`
 
   ${(props) =>
     props.variant === "gradient" &&
-    props.color !== "default" &&
     `
     background: linear-gradient(180deg, ${palette[props.color].main} 42.53%, ${palette[props.color].dark} 106%);
     color: ${palette[props.color].contrastText};
-    border: none;
+    border: 1px solid;
+    border-color: transparent;
+    transition: .3s all ease-in-out;
     &:hover {
-      background: linear-gradient(180deg, ${palette[props.color].dark} 42.53%, ${palette[props.color].darker} 106%);
+      border: 1px solid ${palette[props.color].main};
+      color: ${palette[props.color].main};
+      background: transparent;
+      transition: .3s all ease-in-out;
     }
   `}
 
@@ -99,13 +108,22 @@ const StyledButton = styled(Button)`
     color: ${palette.text.primary};
     border: ${props.variant === "outlined" || props.variant === "ghost" ? `1px solid ${palette.grey[1300]}` : "none"};
     &:hover {
-      background-color: ${props.variant === "contained" ? palette.grey[1300] : palette.grey[1200]};
+      background-color: "${props.variant === "contained" ? palette.grey[1300] : palette.grey[1200]}";
     }
   `}
 `;
 
 const CMButton = forwardRef(function CMButton(
-  { children, color = "primary", variant = "gradient", staricon, endicon, style, className, ...other },
+  {
+    children,
+    color = "primary",
+    variant = "gradient",
+    staricon,
+    endicon,
+    style,
+    className,
+    ...other
+  },
   ref
 ) {
   return (
@@ -133,7 +151,13 @@ CMButton.propTypes = {
   endicon: PropTypes.object,
   staricon: PropTypes.object,
   style: PropTypes.object,
-  variant: PropTypes.oneOf(["contained", "outlined", "soft", "ghost", "gradient"]),
+  variant: PropTypes.oneOf([
+    "contained",
+    "outlined",
+    "soft",
+    "ghost",
+    "gradient",
+  ]),
   color: PropTypes.oneOf(["primary", "success", "warning", "orange"]),
 };
 

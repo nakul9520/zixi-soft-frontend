@@ -84,3 +84,23 @@
 .bounceTopBottom1_animate {
   animation: bounceTopBottom1 5s linear infinite alternate-reverse;
 }
+
+/* Flash */
+@keyframes light {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@-webkit-keyframes light {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+/* Flash */
