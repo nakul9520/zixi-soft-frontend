@@ -36,7 +36,7 @@ const HiringExpert = () => {
   ];
   return (
     <>
-      <section className="hire_expert_section py-4">
+      <section className="hire_expert_section py-5">
         <Container>
           <Row className="align-items-center justify-content-center">
             <Col xs={12}>
@@ -56,16 +56,23 @@ const HiringExpert = () => {
               src={assetsObj.rectangleBlueLayer}
               alt=""
               className="img-fluid expert_hire_blue_layer"
+              data-aos="fade-right"
+              data-aos-delay="1000"
             />
             <img
               src={assetsObj.rectanglePurpleLayer}
               alt=""
               className="img-fluid expert_hire_purple_layer"
+              data-aos="fade-left"
+              data-aos-delay="1000"
             />
             <img
               src={assetsObj.rectangleYellowLayer}
               alt=""
               className="img-fluid expert_hire_yellow_layer"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
             />
             <Row className="">
               {map(hiringExpertContent, (item, i) => (
@@ -73,6 +80,7 @@ const HiringExpert = () => {
                   <Card
                     className="hire_card mb-5 border-0 rounded-4"
                     style={{ background: item.background_color }}
+                    data-aos="zoom-in"
                   >
                     <Card.Body className="px-4">
                       <div

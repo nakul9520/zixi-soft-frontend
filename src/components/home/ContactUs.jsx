@@ -18,7 +18,11 @@ const ContactUs = () => {
           <Row className="">
             <Col xs={12} lg={5}>
               <div className="cantact_points_wrap">
-                <div className="cantact_point">
+                <div
+                  className="cantact_point"
+                  data-aos="flip-down"
+                  data-aos-delay="200"
+                >
                   <span>01</span>
                   <div className="cantact_point_info mb-4   ">
                     <h6>Provide Your Details</h6>
@@ -29,7 +33,11 @@ const ContactUs = () => {
                     </p>
                   </div>
                 </div>
-                <div className="cantact_point">
+                <div
+                  className="cantact_point"
+                  data-aos="flip-down"
+                  data-aos-delay="600"
+                >
                   <span>02</span>
                   <div className="cantact_point_info">
                     <h6>Next Steps?</h6>

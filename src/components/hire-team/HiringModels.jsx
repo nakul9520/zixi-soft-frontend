@@ -62,7 +62,7 @@ const HiringModels = () => {
 
   return (
     <>
-      <section className="hiring_model_section">
+      <section className="hiring_model_section py-5">
         <Container fluid="lg">
           <Stack
             direction="horizontal"
@@ -84,6 +84,7 @@ const HiringModels = () => {
                 <Card
                   className="model_card mb-4 mb-sm-5"
                   style={{ background: item.background_color }}
+                   data-aos="zoom-in"
                 >
                   <Card.Body className="px-4">
                     <Stack direction="horizontal" gap={4}>

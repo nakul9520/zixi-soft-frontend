@@ -19,7 +19,11 @@ const JoinUsSection = () => {
           <Row className="d-flex align-items-center justify-content-center">
             <Col xs={12} sm={6}>
               <div className="opportunities_points_wrap">
-                <div className="opportunities_point">
+                <div
+                  className="opportunities_point"
+                  data-aos="flip-down"
+                  data-aos-delay="200"
+                >
                   <div className="opportunities_point_number">
                     <span>01</span>
                   </div>
@@ -28,7 +32,11 @@ const JoinUsSection = () => {
                     skills.
                   </p>
                 </div>{" "}
-                <div className="opportunities_point">
+                <div
+                  className="opportunities_point"
+                  data-aos="flip-down"
+                  data-aos-delay="600"
+                >
                   <div className="opportunities_point_number">
                     <span>02</span>
                   </div>
@@ -37,7 +45,11 @@ const JoinUsSection = () => {
                     job offers.
                   </p>
                 </div>
-                <div className="opportunities_point">
+                <div
+                  className="opportunities_point"
+                  data-aos="flip-down"
+                  data-aos-delay="1000"
+                >
                   <div className="opportunities_point_number">
                     <span>03</span>
                   </div>
@@ -49,7 +61,11 @@ const JoinUsSection = () => {
             </Col>
             <Col xs={12} sm={6}>
               <div className="joinus_right position-relative">
-                <div className="joinus_img_wrap position-relative z-2">
+                <div
+                  className="joinus_img_wrap position-relative z-2"
+                  data-aos="fade-left"
+                  data-aos-delay="50"
+                >
                   <img
                     src={assetsObj.workingEmpImg}
                     alt="language chart"
@@ -59,17 +75,17 @@ const JoinUsSection = () => {
                 <img
                   src={assetsObj.ellipseBluepink}
                   alt="ellipseBluepink"
-                  className="img-fluid ellipse_purle"
+                  className="img-fluid ellipse_purle bounceTopBottom_animate"
                 />
                 <img
                   src={assetsObj.ellipseGreen}
                   alt="ellipseGreen"
-                  className="img-fluid ellipse_green"
+                  className="img-fluid ellipse_green bounceRightLeft_animate"
                 />
                 <img
                   src={assetsObj.rectangleYellowLayer}
                   alt="rectangleYellowLayer"
-                  className="img-fluid rectangle_yellow_layer"
+                  className="img-fluid rectangle_yellow_layer bounceTopBottom1_animate"
                 />
               </div>
             </Col>

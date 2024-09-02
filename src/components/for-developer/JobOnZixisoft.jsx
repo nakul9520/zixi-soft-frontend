@@ -5,6 +5,8 @@ import Iconify from "../common/iconify";
 import CMButton from "../common/CMButton";
 import OwlCarousel from "react-owl-carousel";
 import { map } from "lodash";
+import Marquee from "react-fast-marquee";
+
 
 const JobOnZixisoft = () => {
   const developerTypeCardData = [
@@ -15,39 +17,6 @@ const JobOnZixisoft = () => {
     { title: "Scala Developer", logo: assetsObj.fiservLogo },
     { title: "Full-Stack", logo: assetsObj.pubmaticLogo },
   ];
-  const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 1000,
-    rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      700: {
-        items: 2,
-      },
-      800: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-      1400: {
-        items: 4,
-      },
-    },
-  };
   return (
     <>
       <section
@@ -62,12 +31,13 @@ const JobOnZixisoft = () => {
           </div>
           <Row className="d-flex align-items-center justify-content-center">
             <Col xs={12}>
-              <OwlCarousel
-                className="owl-theme developer_type_slider"
-                loop
-                margin={30}
-                autoplay
-                {...options}
+              <Marquee
+                speed="100"
+                autoFill={true}
+                direction="left"
+                pauseOnHover={true}
+                fade={true}
+                style={{}}
               >
                 {map(developerTypeCardData, (item, i) => (
                   <div className="developer_type_card_wrap" key={i}>
@@ -134,7 +104,7 @@ const JobOnZixisoft = () => {
                     </Card>
                   </div>
                 ))}
-              </OwlCarousel>
+              </Marquee>
             </Col>
           </Row>
         </Container>

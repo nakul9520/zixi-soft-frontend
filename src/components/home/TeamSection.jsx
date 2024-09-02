@@ -64,7 +64,13 @@ const TeamSection = () => {
             </Col>
             <Col xs={12} lg={5}>
               <div className="teams_images_right d-flex flex-column  align-items-sm-start align-items-lg-center">
-                <div className="teams_member_card_wrap teams_member_card_1 shadow">
+                <div
+                  className="teams_member_card_wrap teams_member_card_1 shadow"
+                  data-aos="fade-down"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                >
                   <div className="img_wrap">
                     <img
                       src={assetsObj.teamMember2}
@@ -87,7 +93,11 @@ const TeamSection = () => {
                   </div>
                 </div>
 
-                <div className="teams_member_card_wrap teams_member_card_2">
+                <div
+                  className="teams_member_card_wrap teams_member_card_2"
+                  data-aos="zoom-in-up"
+                  data-aos-delay="100"
+                >
                   <div className="img_wrap">
                     <img
                       src={assetsObj.teamMember2}

@@ -13,7 +13,11 @@ const Guarantee = () => {
           </h5>
           <Row>
             <Col sm={6} md={4} className="card_wrapper">
-              <Card className="guarantee_card mb-4">
+              <Card
+                className="guarantee_card mb-4"
+                data-aos="zoom-in"
+                data-aos-delay="50"
+              >
                 <div className="top_wrapper">
                   <img src={assetsObj.trailIcon} alt="icons" />
                   <h4 className="text-light fw-normal secondary_font">
@@ -27,7 +31,13 @@ const Guarantee = () => {
                 </Card.Body>
               </Card>
             </Col>
-            <Col sm={6} md={4} className="card_wrapper">
+            <Col
+              sm={6}
+              md={4}
+              className="card_wrapper"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
               <Card className="guarantee_card mb-4">
                 <div className="top_wrapper">
                   <img src={assetsObj.moneyBack} alt="icons" />
@@ -44,7 +54,11 @@ const Guarantee = () => {
               </Card>
             </Col>
             <Col sm={6} md={4} className="card_wrapper">
-              <Card className="guarantee_card mb-4">
+              <Card
+                className="guarantee_card mb-4"
+                data-aos="zoom-in"
+                data-aos-delay="300"
+              >
                 <div className="top_wrapper">
                   <img src={assetsObj.freeReplacement} alt="icons" />
                   <h4 className="text-light fw-normal secondary_font">

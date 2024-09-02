@@ -14,7 +14,7 @@ const HireTeamBanner = () => {
       <section className="hire_team_banner d-flex align-items-center justify-content-center">
         <Container fluid="lg" className="h-100">
           <Row className="align-items-center h-100">
-            <Col md={6} className="mb-5 mb-md-0">
+            <Col md={6} className="mb-3 mb-md-0">
               <h2>
                 Find <span className="gradient_heading">remote</span> talent
               </h2>
@@ -61,9 +61,7 @@ const HireTeamBanner = () => {
                 <p className="subtitle1 mb-0">1.75 interview-to-hire ratio</p>
               </Stack>
 
-              <CMButton className="rounded-5">
-                Get matched with top engineers
-              </CMButton>
+              <CMButton variant="contained" className="rounded-5">Share your requirement</CMButton>
             </Col>
             <Col
               md={6}

@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { assetsObj } from "@/utils/Images";
 import { map } from "lodash";
-import OwlCarousel from "react-owl-carousel";
+import Marquee from "react-fast-marquee";
 
 const dreamCompanyLogoData = [
   { logo: assetsObj.paytmLogo },
@@ -13,36 +13,6 @@ const dreamCompanyLogoData = [
   { logo: assetsObj.googleLogo },
 ];
 const DeveloperDreamCompany = () => {
-  const options = {
-    margin: 30,
-    responsiveClass: true,
-    nav: false,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 1000,
-    rtl: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      700: {
-        items: 3,
-      },
-      800: {
-        items: 4,
-      },
-      1000: {
-        items: 6,
-      },
-    },
-  };
   return (
     <>
       <section className="developer_dream_company_section py-5">
@@ -52,21 +22,26 @@ const DeveloperDreamCompany = () => {
           </div>
           <Row>
             <Col xs={12}>
-              <OwlCarousel
-                className="owl-theme section developer_dream_company_slider"
-                loop
-                margin={30}
-                autoplay
-                {...options}
+              <Marquee
+                speed="100"
+                autoFill={true}
+                direction="left"
+                pauseOnHover={true}
+                fade={true}
+                style={{}}
               >
                 {map(dreamCompanyLogoData, (item, i) => (
-                  <div className="barnd_logo_card">
+                  <div
+                    className="barnd_logo_card"
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                  >
                     <div className="brand_logo" key={i}>
                       <img src={item.logo} className="img-fluid" alt="" />
                     </div>
                   </div>
                 ))}
-              </OwlCarousel>
+              </Marquee>
             </Col>
           </Row>
         </Container>

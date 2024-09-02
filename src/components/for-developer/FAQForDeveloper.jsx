@@ -14,6 +14,8 @@ const FAQForDeveloper = () => {
                 style={{
                   backgroundImage: `URL(${assetsObj.scheduleCallBG})`,
                 }}
+                data-aos="fade-right"
+                data-aos-delay="300"
               >
                 <h5 className="primary-font text-white">Trusted</h5>
                 <h5 className="primary-font text-danger">

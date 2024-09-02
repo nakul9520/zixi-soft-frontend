@@ -13,7 +13,11 @@ const ApplyForJob = () => {
           <Row>
             <Col xs={12}>
               <div className="apply_job_process_cards_wrap position-relative">
-                <div className="apply_job_process_card apply_job_process_card1">
+                <div
+                  className="apply_job_process_card apply_job_process_card1"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">01</h5>
                     <div>
@@ -37,7 +41,11 @@ const ApplyForJob = () => {
                     /> */}
                   </div>
                 </div>
-                <div className="apply_job_process_card apply_job_process_card2">
+                <div
+                  className="apply_job_process_card apply_job_process_card2"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
                   <div className="orange_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.globe_person_icon}
@@ -61,7 +69,9 @@ const ApplyForJob = () => {
                     </div>
                   </div>
                 </div>
-                <div className="apply_job_process_card apply_job_process_card3">
+                <div
+                  className="apply_job_process_card apply_job_process_card3"
+                >
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">03</h5>
                     <div>
@@ -85,7 +95,11 @@ const ApplyForJob = () => {
                   /> */}
                   </div>
                 </div>{" "}
-                <div className="apply_job_process_card apply_job_process_card4">
+                <div
+                  className="apply_job_process_card apply_job_process_card4"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                >
                   <div className="blue_black_shade apply_job_icon_design">
                     <img
                       src={assetsObj.handshake_icon}
@@ -108,8 +122,12 @@ const ApplyForJob = () => {
                       </p>
                     </div>
                   </div>
-                </div>{" "}
-                <div className="apply_job_process_card apply_job_process_card5">
+                </div>
+                <div
+                  className="apply_job_process_card apply_job_process_card5"
+                  data-aos="zoom-in"
+                  data-aos-delay="700"
+                >
                   <div className="apply_job_process_card_content">
                     <h5 className="fw-bold">05</h5>
                     <div>

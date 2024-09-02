@@ -5,14 +5,15 @@ import { Col, Container, Row } from "react-bootstrap";
 const HireDevelopers = () => {
   return (
     <>
-      <section className="hire_developer_section pt-4 pb-5">
+      <section className="hire_developer_section py-5">
         <Container>
           <Row>
             <Col xs={12}>
               <div className="common_heading">
                 <h3>Connect with the Right Talent Quickly and Easily</h3>
                 <p>
-                If you’re not able to find the right talent, we’ll help you locate one that meets your needs.
+                  If you’re not able to find the right talent, we’ll help you
+                  locate one that meets your needs.
                 </p>
               </div>
             </Col>
@@ -95,27 +96,45 @@ const HireDevelopers = () => {
                     src={assetsObj.hireDevImg1}
                     alt="hire-dev-img-1"
                     className="hire_dev_img1 img-fluid"
+                    data-aos="zoom-in-up"
+                    data-aos-delay="100"
                   />
                   <img
                     src={assetsObj.hireDevImg2}
                     alt="hire-dev-img-2"
                     className="hire_dev_img2 img-fluid"
+                    data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
                   />
                 </div>
                 <img
                   src={assetsObj.yellowBorderGradient}
                   alt="yellowBorderGradient"
                   className="img-fluid yellow_border_gradient"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
                 />
                 <img
                   src={assetsObj.blueBorderGradient}
                   alt="blueBorderGradient"
                   className="img-fluid blue_border_gradient"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                  data-aos-delay="700"
                 />
                 <img
                   src={assetsObj.purpleBorderGradient}
                   alt="purpleBorderGradient"
                   className="img-fluid purple_border_gradient"
+                  data-aos="flip-left"
+                  data-aos-easing="ease-out-cubic"
+                  data-aos-duration="2000"
+                  data-aos-delay="900"
                 />
               </div>
             </Col>

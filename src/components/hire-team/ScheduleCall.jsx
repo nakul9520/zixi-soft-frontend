@@ -17,7 +17,7 @@ const ScheduleCall = () => {
           >
             <Row>
               <Col md={7}>
-                <div className="d-flex align-items-start justify-content-center h-100 flex-column p-5 gap-3">
+                <div className="d-flex align-items-start justify-content-center  h-100 flex-column p-lg-5 p-sm-2 p-3 gap-3">
                   <h3 className="text-light">
                     Ready to hire talent smarter and more efficiently with
                     Zixisoft?
