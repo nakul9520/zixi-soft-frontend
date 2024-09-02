@@ -4,12 +4,10 @@
 
 /* For MacBook Pro Laptop 1440x990 Media Query:- */
 @media only screen and (min-width: 1367px) and (max-width: 1649px) {
-
 }
 
 /* For Small Desktop Screen Resolution 1366x768 Media:- */
 @media only screen and (max-width: 1366px) {
-
 }
 
 /* For Ipad-Pro devices 1024x1366 Media Query:- */
@@ -24,7 +22,7 @@
     width: 70%;
   }
   .hire_team_banner {
-    height: 50vh;
+    height: 55vh;
   }
 }
 
@@ -34,10 +32,17 @@
     right: 28px;
     width: 250px;
   }
+  .banner_content_wrap .main_heading {
+    font-weight: 400;
+    font-size: 40px;
+}
 }
 
 /* For Ipad devices 768x1024 Media Query:- */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner_content_wrap{
+    margin-top: 5rem;
+  }
   .client_serve_img_wrap .ellipse_yellow {
     width: 130px;
   }
@@ -85,7 +90,9 @@
   .consultant_contact_form {
     margin: 20px 0;
   }
-
+  .header_section {
+    background: #fff;
+  }
   /* footer css */
   .footer_expertise_about_wrap {
     flex-wrap: wrap;
@@ -108,12 +115,24 @@
   .logo_wrapper {
     max-width: 100px;
   }
+  .banner_content_wrap{
+    margin-top: 5rem;
+  }
   /* footer */
   .footer_meetup .vr {
     display: none;
   }
   .apply_now_banner {
     padding: 2rem 0;
+  }
+  .for_developer_banner .for_dev_banner_content{
+    margin-top: 5rem;
+  }
+  .for_developer_banner{
+    height: 50vh;
+  }
+  .for_dev_banner_img{
+    display: none;
   }
 
   .expert_hire_purple_layer,
@@ -127,7 +146,7 @@
   .shedule_call_model_card .hstack {
     flex-direction: column;
   }
-  .shedule_call_model_card_content{
+  .shedule_call_model_card_content {
     display: block;
   }
 }
@@ -184,5 +203,18 @@
   }
   .expertise_wrap .hstack .vr {
     display: none;
+  }
+}
+
+/*Bootstrp 5 xs bearkpoint */
+@media only screen and (max-width: 576px) {
+  .clent_serve_content_wrap .row:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+  .banner_content_wrap{
+    margin-top: 5rem;
+  }
+  .banner_section{
+    height: auto;
   }
 }

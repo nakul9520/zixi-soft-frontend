@@ -30,7 +30,13 @@ const TalentNeed = () => {
           See How We Perfectly Match Talent to Your Needs
         </h3>
         <Container fluid="lg" className="main_block">
-          <Card className="talent_card">
+          <Card
+            className="talent_card"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">
@@ -49,7 +55,13 @@ const TalentNeed = () => {
               </Stack>
             </Card.Body>
           </Card>
-          <Card className="talent_card ms-auto">
+          <Card
+            className="talent_card ms-auto"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">
@@ -68,7 +80,13 @@ const TalentNeed = () => {
               </Stack>
             </Card.Body>
           </Card>
-          <Card className="talent_card">
+          <Card
+            className="talent_card"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">
@@ -111,7 +129,13 @@ const TalentNeed = () => {
               </Stack>
             </Card.Body>
           </Card>
-          <Card className="talent_card ms-auto">
+          <Card
+            className="talent_card ms-auto"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">
@@ -131,8 +155,13 @@ const TalentNeed = () => {
               </Stack>
             </Card.Body>
           </Card>
-          <Card className="talent_card">
-          
+          <Card
+            className="talent_card"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">
@@ -150,7 +179,13 @@ const TalentNeed = () => {
               </Stack>
             </Card.Body>
           </Card>
-          <Card className="talent_card ms-auto">
+          <Card
+            className="talent_card ms-auto"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+          >
             <Card.Body className="p-4">
               <Stack direction="horizontal" gap={4}>
                 <div className="avatar_wrapper flex-shrink-0">

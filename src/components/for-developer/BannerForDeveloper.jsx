@@ -7,7 +7,7 @@ const BannerForDeveloper = () => {
   return (
     <>
       <section
-        className="hire_team_banner d-flex align-items-center justify-content-center"
+        className="for_developer_banner d-flex align-items-center justify-content-center"
         style={{ backgroundImage: `url(${assetsObj.forDevBg})` }}
       >
         <Container fluid="md" className="h-100">
@@ -23,9 +23,7 @@ const BannerForDeveloper = () => {
                 </p>
                 <div className="for_dev_email_input">
                   <InputGroup className="mb-3">
-                    <Form.Control
-                      placeholder="Enter your Email"
-                    />
+                    <Form.Control placeholder="Enter your Email" />
                     <CMButton variant="outline-secondary" className="rounded-1">
                       Apply Today
                     </CMButton>
@@ -35,11 +33,11 @@ const BannerForDeveloper = () => {
             </Col>
             <Col
               md={6}
-              className="position-relative h-100 d-flex align-items-end justify-content-md-end flex-column "
+              className="for_dev_banner_img justify-content-md-end flex-column"
             >
               <img
                 src={assetsObj.girlWithLaptop}
-                className="img-fluid for_dev_banner_img"
+                className="img-fluid "
                 alt="hire team banner"
               />
             </Col>

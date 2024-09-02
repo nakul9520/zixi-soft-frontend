@@ -6,7 +6,7 @@ import PrimaryButton from "../common/PrimaryButton";
 const About = () => {
   return (
     <>
-      <section className="about_section">
+      <section className="about_section py-5">
         <div className="about_bg_img position-absolute">
           <img
             src={assetsObj.logo_first_letter}
@@ -16,7 +16,7 @@ const About = () => {
         </div>
         <Container fluid="md">
           <Row>
-            <Col xs={12} sm={4}>
+            <Col xs={12} sm={4} data-aos="fade-up" data-aos-duration="3000">
               <div>
                 <h3>Why companies choose Sourcebae</h3>
               </div>
@@ -25,6 +25,8 @@ const About = () => {
               xs={12}
               sm={{ span: 7, offset: 1 }}
               md={{ span: 6, offset: 2 }}
+              data-aos="fade-up"
+              data-aos-duration="3000"
             >
               <p className="subtitle1">
                 SourceBae will help you find the best tech experts; Our AI tools
@@ -46,23 +48,39 @@ const About = () => {
                 gap={3}
                 className="about_statics_wrap justify-content-between pt-5"
               >
-                <div className="about_statics text-center">
+                <div
+                  className="about_statics text-center"
+                  data-aos="fade-left"
+                  data-aos-delay="100"
+                >
                   <div>
-                    <h3 className="fw-bold">250+</h3>
-                    <p>Customer Service</p>
+                    <h3 className="fw-bold">150+</h3>
+                    <p>Clients Trust Us Worldwide</p>
                   </div>
                 </div>{" "}
-                <div className="about_statics text-center">
-                  <h3 className="fw-bold">2000+</h3>
-                  <p>Network</p>
+                <div
+                  className="about_statics text-center"
+                  data-aos="fade-left"
+                  data-aos-delay="500"
+                >
+                  <h3 className="fw-bold">3000+</h3>
+                  <p>Tech Expert Community</p>
                 </div>{" "}
-                <div className="about_statics text-center">
-                  <h3 className="fw-bold">10+ Years</h3>
-                  <p>Experience</p>
+                <div
+                  className="about_statics text-center"
+                  data-aos="fade-left"
+                  data-aos-delay="900"
+                >
+                  <h3 className="fw-bold">8+ Years</h3>
+                  <p>Expertise</p>
                 </div>
-                <div className="about_statics text-center">
-                  <h3 className="fw-bold">150+</h3>
-                  <p>Team Worldwide</p>
+                <div
+                  className="about_statics text-center"
+                  data-aos="fade-left"
+                  data-aos-delay="1300"
+                >
+                  <h3 className="fw-bold">5+</h3>
+                  <p>Offices Across the Globe</p>
                 </div>
               </Stack>
             </Col>

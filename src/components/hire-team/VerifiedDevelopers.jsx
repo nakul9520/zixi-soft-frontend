@@ -1,39 +1,10 @@
 import { assetsObj } from "@/utils/Images";
 import { map } from "lodash";
 import { Card, Col, Container, Row, Stack } from "react-bootstrap";
-import OwlCarousel from "react-owl-carousel";
 import CMButton from "../common/CMButton";
+import Marquee from "react-fast-marquee";
 
 const VerifiedDevelopers = () => {
-  const options = {
-    stagePadding: 80,
-    responsive: {
-      0: {
-        items: 1,
-        stagePadding: 20,
-      },
-      576: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-        stagePadding: 50,
-      },
-      992: {
-        items: 2,
-      },
-      1400: {
-        items: 3,
-      },
-    },
-    nav: true,
-    dots: false,
-    navText: [
-      "<i class='bi bi-arrow-left'></i>",
-      "<i class='bi bi-arrow-right'></i>",
-    ],
-  };
-
   const data = [
     {
       id: 1,
@@ -180,12 +151,13 @@ const VerifiedDevelopers = () => {
             </div>
           </Col>
           <Col lg={8} xl={9} className="position-relative">
-            <OwlCarousel
-              className="owl-theme"
-              loop
-              margin={30}
-              autoPlay={true}
-              {...options}
+            <Marquee
+              speed="100"
+              autoFill={true}
+              direction="left"
+              pauseOnHover={true}
+              fade={true}
+              style={{}}
             >
               {map(data, (item, i) => (
                 <Card key={i} className="developer_card">
@@ -230,7 +202,7 @@ const VerifiedDevelopers = () => {
                   </Card.Body>
                 </Card>
               ))}
-            </OwlCarousel>
+            </Marquee>
             <h5 className="text-light secondary_font profile_btn">
               View Profile
             </h5>

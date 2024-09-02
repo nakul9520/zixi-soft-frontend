@@ -1,0 +1,86 @@
+@keyframes bounceTopBottom {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bounceRightLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveInSquare {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Custom */
+
+@keyframes bounceTopBottom1 {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    left: -150px;
+  }
+  50% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animation default Clasess */
+
+.bounceTopBottom_animate {
+  animation: bounceTopBottom 3s linear infinite alternate-reverse;
+}
+.bounceRightLeft_animate {
+  animation: bounceRightLeft 3s linear infinite alternate-reverse;
+}
+
+.moveInSquare_animate {
+  animation: moveInSquare 2s ease-in-out infinite;
+}
+
+/* custom */
+.bounceTopBottom1_animate {
+  animation: bounceTopBottom1 5s linear infinite alternate-reverse;
+}

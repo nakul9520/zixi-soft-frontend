@@ -4,13 +4,54 @@ import { map } from "lodash";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { navLinks } from "./LinkConfig";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [navbar, setNavbar] = useState(false);
   const navigate = useNavigate();
+
+  const [isVisible, setIsVisible] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+
+    setIsVisible(visible);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
+  //navbar scroll changeBackground function
+  const changeBackground = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 60) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
   return (
     <>
-      <Navbar fixed="top" expand="lg" className="header_section">
-        <Container fluid className="gap-3">
+      <Navbar
+        // fixed="top"
+        expand="lg"
+        className={`fixed-top header_section ${navbar ? "navbar_active" : ""} ${isVisible ? "visible" : "invisible"}`}
+      >
+        <Container fluid className="gap-2">
           <Navbar.Brand href="#">
             <div className="logo_wrapper">
               <img

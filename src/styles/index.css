@@ -6,12 +6,22 @@
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  transition: top 0.3s;
 }
-
+.navbar_active {
+  background-color: #fff;
+}
 .logo_wrapper {
   max-width: 200px;
 }
 
+.invisible {
+  top: -80px; /* Adjust based on your header's height */
+}
+
+.visible {
+  top: 0;
+}
 /* Header CSS END */
 /* BANNER CSS START */
 .banner_section {
@@ -74,7 +84,7 @@
 
 .about_section {
   background: #61c5c32e;
-  padding: 50px 0;
+  /* padding: 50px 0; */
 }
 .about_bg_img {
   position: absolute;
@@ -158,6 +168,7 @@
 }
 .hire_dev_right {
   position: relative;
+  margin-top: 2rem;
 }
 .hire_dev_card_img {
   width: 50px;
@@ -169,6 +180,9 @@
 }
 .hire_dev_img_wrap img {
   border-radius: 20px;
+}
+.hire_dev_content_wrap {
+  margin-bottom: 1rem;
 }
 .hire_dev_img1 {
   width: 70%;
@@ -211,6 +225,15 @@
 .hire_card {
   min-height: 300px;
   position: relative;
+}
+.hire_card {
+  transition: 0.5s all ease-in-out;
+}
+.hire_card:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: -10px;
+  cursor: pointer;
+  transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .hire_card_btn {
   position: absolute;
@@ -256,7 +279,7 @@
 .teams_section {
   background-color: #11cd7e0f;
 }
-.team_info_wrap_icon {
+.team_info_wrap_icon img {
   background: linear-gradient(180deg, #0cb3ff61, #10a8ee57);
   width: 60px;
   height: 60px;
@@ -522,7 +545,7 @@
   text-align: end;
   padding: 10px 14px 0 0;
 }
-.model_icon i{
+.model_icon i {
   font-size: 26px;
   cursor: pointer;
 }
@@ -540,4 +563,12 @@
 .shedule_call_model_card_content {
   display: flex;
   width: 100%;
+}
+
+.rfm-child {
+  margin: 0 10px;
+}
+.btn-primary:hover {
+  background: transparent !important;
+  /* border: #019fe7; */
 }

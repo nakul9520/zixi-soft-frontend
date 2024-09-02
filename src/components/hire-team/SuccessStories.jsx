@@ -2,6 +2,7 @@ import { assetsObj } from "@/utils/Images";
 import { map } from "lodash";
 import { Card, Stack } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
+import Marquee from "react-fast-marquee";
 
 const SuccessStories = () => {
   const options = {
@@ -113,18 +114,21 @@ const SuccessStories = () => {
           success stories showcase how we deliver exceptional talent and results
           every time.
         </p>
-        <OwlCarousel
-          className="owl-theme mb-5"
-          loop
-          margin={30}
-          autoPlay={true}
-          {...options}
+        <Marquee
+          speed="100"
+          autoFill={true}
+          direction="right"
+          pauseOnHover={true}
+          fade={true}
+          style={{}}
         >
           {map(data, (item, i) => (
             <Card
               className="guarantee_card"
               style={{ background: item.background_color }}
               key={i}
+              data-aos="zoom-in"
+              data-aos-delay="100"
             >
               <Card.Body>
                 <div className="d-flex align-items-center gap-2 mb-3">
@@ -158,19 +162,22 @@ const SuccessStories = () => {
               </Card.Body>
             </Card>
           ))}
-        </OwlCarousel>
-        <OwlCarousel
-          className="owl-theme section"
-          loop
-          margin={30}
-          autoPlay={true}
-            {...options2}
+        </Marquee>
+        <Marquee
+          speed="100"
+          autoFill={true}
+          direction="left"
+          pauseOnHover={true}
+          fade={true}
+          style={{ marginTop: "20px" }}
         >
           {map(data, (item, i) => (
             <Card
               className="guarantee_card"
               style={{ background: item.background_color }}
               key={i}
+              data-aos="zoom-in"
+              data-aos-delay="500"
             >
               <Card.Body>
                 <div className="d-flex align-items-center gap-2 mb-3">
@@ -204,7 +211,7 @@ const SuccessStories = () => {
               </Card.Body>
             </Card>
           ))}
-        </OwlCarousel>
+        </Marquee>
       </section>
     </>
   );
